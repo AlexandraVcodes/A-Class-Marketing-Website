@@ -133,14 +133,20 @@ p {
   background-color: var(--secondary-color);
 }
 
-.fakten {
-  background-color: var(--secondary-color);
-}
-
 .self {
   box-shadow: var(--box-shadow);
 }
 
 .alex {
   box-shadow: var(--box-shadow);
+}
+
+.facts {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.fun-facts {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
