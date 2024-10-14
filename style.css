@@ -136,3 +136,11 @@ p {
 .fakten {
   background-color: var(--secondary-color);
 }
+
+.self {
+  box-shadow: var(--box-shadow);
+}
+
+.alex {
+  box-shadow: var(--box-shadow);
+}
