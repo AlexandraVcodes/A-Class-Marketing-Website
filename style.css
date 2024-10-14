@@ -27,8 +27,9 @@ h2 {
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+  opacity: 0.9;
   padding: 20px;
+  color: var(--primary-color);
 }
 
 .app-paragraph {
@@ -129,5 +130,9 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  background-color: var(--secondary-color);
+}
+
+.fakten {
   background-color: var(--secondary-color);
 }
