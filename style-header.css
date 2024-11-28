@@ -1,0 +1,29 @@
+.concept {
+  position: relative;
+  padding: 5em;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.concept:hover {
+  opacity: 0.7;
+}
+
+.top-header-image {
+  background: url("sources/Webseite-Header_white_Original.png") top center /
+    cover;
+  display: flex;
+}
+
+h1 {
+  letter-spacing: 20px;
+  position: relative;
+
+  color: black;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  animation: ease-in;
+}
