@@ -1,7 +1,6 @@
 .concept {
-  position: relative;
   padding: 5em;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
   scroll-snap-align: center;
 }
@@ -11,8 +10,7 @@
 }
 
 .top-header-image {
-  background: url("sources/Webseite-Header_white_Original.png") top center /
-    cover;
+  background: url("sources/Webseite-Header_1366\ x\ 768.jpg") top center;
   display: flex;
 }
 
@@ -22,8 +20,4 @@ h1 {
 
   color: black;
   text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  animation: ease-in;
 }
