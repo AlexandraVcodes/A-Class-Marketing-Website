@@ -192,3 +192,12 @@ p {
   max-width: 1300px;
   max-height: 740px;
 }
+
+@media (max-width: 600px) {
+  p {
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+  }
+}
