@@ -154,10 +154,14 @@ p {
 
 .website-portfolio {
   margin-top: 25px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .ai-portfolio {
   margin-top: 35px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .marketing-portfolio {
@@ -194,10 +198,18 @@ p {
 }
 
 @media (max-width: 600px) {
-  p {
+  p,
+  a {
     text-align: center;
-  }
-  p {
     font-size: 14px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .app-paragraph {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.3;
   }
 }
