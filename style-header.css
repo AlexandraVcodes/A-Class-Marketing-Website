@@ -5,10 +5,6 @@
   scroll-snap-align: center;
 }
 
-.concept:hover {
-  opacity: 0.7;
-}
-
 .top-header-image {
   background: url("sources/Webseite-Header_1366\ x\ 768.jpg") top center;
   display: flex;
