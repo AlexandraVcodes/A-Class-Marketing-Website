@@ -21,6 +21,6 @@ h1 {
 @media (max-width: 600px) {
   .top-header-image {
     max-width: 98%;
-    max-height: 65%;
+    max-height: 20%;
   }
 }

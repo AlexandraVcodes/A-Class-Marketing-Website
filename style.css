@@ -227,4 +227,12 @@ p {
     box-shadow: var(--box-shadow);
     color: #fae6c3;
   }
+
+  .navigation-links a {
+    margin: 15px;
+    border-radius: 4px;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
 }
