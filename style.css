@@ -226,6 +226,7 @@ p {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: #fae6c3;
+    line-break: auto;
   }
 
   .navigation-links a {
