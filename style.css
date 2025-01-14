@@ -224,12 +224,11 @@ p {
   .clock-link,
   .recipe-link {
     border-radius: 3px;
-    padding: 12px 6px;
+    padding: 7px 6px;
     text-decoration: none;
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: #fae6c3;
-    line-break: auto;
   }
 
   .navigation-links a {
