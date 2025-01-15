@@ -194,6 +194,10 @@ p {
   max-height: 320px;
 }
 
+.campaign-performance-mobile {
+  display: none;
+}
+
 .header-picture {
   text-align: center;
   max-width: 1300px;
@@ -237,5 +241,17 @@ p {
     padding: 15px 10px;
     text-decoration: none;
     text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .campaign-performance {
+    display: none;
+  }
+
+  .campaign-performance-mobile {
+    display: block;
+    max-width: 80%;
+    max-height: 95%;
   }
 }
