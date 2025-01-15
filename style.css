@@ -204,6 +204,10 @@ p {
   max-height: 740px;
 }
 
+.projects-headline {
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   p,
   a {
