@@ -258,4 +258,15 @@ p {
     max-width: 80%;
     max-height: 95%;
   }
+
+  .digital-marketing-portfolio {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .marketing-portfolio {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 10px;
+  }
 }
