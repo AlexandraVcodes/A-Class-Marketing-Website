@@ -5,8 +5,8 @@
   scroll-snap-align: center;
 }
 
-.top-header-image {
-  background: url("sources/Bild_Startseite_formatiert.jpg") top center;
+#header {
+  background: url("sources/Webseite-Header_1366\ x\ 768.jpg") top center;
   display: flex;
   max-height: 640px;
 }
@@ -20,7 +20,7 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  .top-header-image {
+  #header {
     max-width: 100%;
     max-height: 60%;
   }
