@@ -6,7 +6,7 @@
 }
 
 #header {
-  background: url("images/Header\ kleiner\ 990\ x\ 640\ px.jpg") top center;
+  background: url("images/Header-klein.jpg") top center;
   display: flex;
   max-height: 640px;
 }
