@@ -68,8 +68,9 @@
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand me-3" href="https://www.a-class-marketing.at/">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Logo links -->
+          <a class="navbar-brand" href="https://www.a-class-marketing.at/">
             <img
               src="sources/Logo_ohne Schriftzug.png"
               alt="Logo"
@@ -78,17 +79,9 @@
             />
           </a>
   
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
+          <!-- Menü links -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex flex-row flex-wrap align-items-center">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -111,6 +104,16 @@
               </li>
             </ul>
           </div>
+  
+          <!-- Toggle Button (Mobil) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </nav>
     <section id="contact" class="container my-5">
@@ -177,8 +180,14 @@
             <button type="submit" class="btn btn-primary custom-button">
               Nachricht senden
             </button>
+
           </div>
         </form>
       </section>
+      <!-- BOOTSTRAP JS für Navbar-Funktion -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
   </body>
 </html>
