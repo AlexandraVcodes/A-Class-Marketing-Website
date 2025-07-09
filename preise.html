@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angebotspakete</title>
+    <link
+      rel="icon"
+      href="sources/Logo_ohne Schriftzug.png"
+      type="image/icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: black;
+        line-height: 1.6;
+        padding: 20px;
+        margin: 0;
+      }
+      h2 {
+        color: #68247a;
+        font-size: 1.5rem;
+      }
+      .paket {
+        border-top: 2px solid #ccc;
+        padding-top: 20px;
+        margin-top: 20px;
+      }
+
+      .du-suchst {
+        text-align: center;
+        color: #68247a;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      strong {
+        margin-top: 10px;
+      }
+      .ideal {
+        color: #68247a;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .einleitung {
+        margin-bottom: 30px;
+      }
+      .highlight {
+        color: #68247a;
+        font-weight: bold;
+        text-align: center;
+        margin: 30px auto 0;
+        font-size: 1.4rem;
+        background-color: #f3e9f7;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 600px;
+        display: block;
+      }
+
+      .zusammenarbeit {
+        color: #68247a;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px auto 0;
+        font-size: 1.4rem;
+        background-color: #f3e9f7;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 600px;
+        display: block;
+      }
+
+      .cta-button {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 12px 24px;
+        background-color: #68247a;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s;
+      }
+      .cta-button:hover {
+        background-color: #501a5c;
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        .paket {
+          padding-top: 15px;
+          margin-top: 15px;
+        }
+        ul {
+          padding-left: 15px;
+        }
+
+        .highlight {
+          font-size: 1.2rem;
+          padding: 10px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo links -->
+        <a class="navbar-brand" href="https://www.a-class-marketing.at/">
+          <img
+            src="sources/Logo_ohne Schriftzug.png"
+            alt="Logo"
+            width="80"
+            height="80"
+          />
+        </a>
+
+        <!-- Menü links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Über mich</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projekte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imprint.html"
+                >Impressum & Datenschutz</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontaktformular.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preise.html">Pakete & Preise</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Toggle Button (Mobil) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="einleitung">
+      <p><strong>Du willst …</strong></p>
+      <ul>
+        <li>
+          <strong
+            >keine irrelevanten Anzeigen, sondern Google Ads, die deine
+            Zielgruppe im richtigen Moment erreichen</strong
+          >
+          und eine echte Verbindung zu deiner Marke schaffen.
+        </li>
+        <li>
+          <strong>Kund*innen, die zu dir passen</strong> - Menschen, die durch
+          gezielte Suchbegriffe genau DICH finden und sich auf deiner Webseite
+          sofort angesprochen fühlen.
+        </li>
+        <li>
+          <strong
+            >dass deine Werte und Visionen nicht nur in Anzeigen, sondern auch
+            auf deiner Webseite klar und überzeugend zum Ausdruck kommen</strong
+          >
+          – vom ersten Eindruck bis zum letzten Klick.
+        </li>
+        <li>
+          <strong
+            >als Expert*in wahrgenommen werden, mit einer Webseite, die
+            Vertrauen aufbaut</strong
+          >, professionell wirkt und deine Kompetenz visuell wie inhaltlich
+          unterstreicht.
+        </li>
+        <li>
+          <strong>Qualität und das gewisse Etwas</strong> - eine Website, die
+          nicht nur gut aussieht, sondern strategisch aufgebaut ist und perfekt
+          mit deinen Kampagnen zusammenspielt.
+        </li>
+      </ul>
+      <p class="du-suchst">
+        Klingt genau nach dem, was du suchst?<br />
+        Dann lass uns gemeinsam loslegen - ganz nach deinem Bedarf:<br />
+        Ob du gerade erst startest, deine Performance verbessern willst oder ein
+        rundum strategisches Gesamtpaket brauchst - ich habe drei durchdachte
+        Angebote für dich:
+      </p>
+      <p class="highlight">
+        💼Basic. 🚀Smart. 👑Premium. <br />Drei Pakete - ein Ziel: messbarer
+        Erfolg.🙌
+      </p>
+      <a
+        class="cta-button"
+        href="https://calendly.com/alexandra-vukits82/30min"
+        target="_blank"
+        >Info-Gespräch buchen</a
+      >
+    </div>
+
+    <div class="paket">
+      <h2>💼 Starterpaket - „Basic Performance“</h2>
+      <p><strong>Einmalpreis:</strong> € 1.900,--</p>
+
+      <p><strong>Einmalig:</strong></p>
+      <ul>
+        <li>
+          <strong>Webseite:</strong>
+          <ul>
+            <li>Onepager oder einfache 3-Seiten-Webseite</li>
+            <li>Responsives Design (mobilfreundlich)</li>
+            <li>Einbindung eines Kontaktformulars</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Google Ads:</strong>
+          <ul>
+            <li>Einrichtung eines Google Ads Kontos</li>
+            <li>1 Kampagne mit 1 bis 2 Anzeigengruppen</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Social Media Ads:</strong>
+          <ul>
+            <li>2 Werbeanzeigen (Facebook oder Instagram)</li>
+            <li>Zielgruppendefinition & Einrichtung</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="ideal">
+        ➡️ Ideal für: Einzelunternehmer:innen oder kleine Dienstleister, die
+        erstmals online sichtbar sein möchten.
+      </p>
+      <p><strong>Inhalt Betreuung:</strong></p>
+      <ul>
+        <li>Monatlicher Report zu Google Ads & Social Media Ads</li>
+        <li>Optimierung der Kampagnen</li>
+      </ul>
+    </div>
+
+    <div class="paket">
+      <h2>🚀 Businesspaket - „Smart Performance“</h2>
+      <p><strong>Einmalpreis:</strong> € 3.900,--</p>
+
+      <ul>
+        <li>
+          <strong>Webseite:</strong>
+          <ul>
+            <li>Bis zu 5 Seiten mit individuellem Design</li>
+            <li>SEO-Grundoptimierung</li>
+            <li>Google Analytics & Kontaktformular</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Google Ads:</strong>
+          <ul>
+            <li>2 Kampagnen, bis zu 5 Anzeigengruppen</li>
+            <li>Conversion-Tracking</li>
+            <li>2 Wochen Monitoring & Optimierung</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Social Media Ads:</strong>
+          <ul>
+            <li>4 Anzeigen inkl. Gestaltung</li>
+            <li>A/B-Testing</li>
+            <li>Wöchentliches Monitoring, monatliches Reporting</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="ideal">
+        ➡️ Ideal für: Kleine Unternehmen mit ersten
+        Online-Marketing-Erfahrungen.
+      </p>
+      <p><strong>Inhalt Betreuung:</strong></p>
+      <ul>
+        <li>Optimierung von Google & Social Ads</li>
+        <li>Monatliches Reporting</li>
+        <li>Pflege der Webseite</li>
+        <li>Einmaliger SEO-Checks</li>
+      </ul>
+    </div>
+
+    <div class="paket">
+      <h2>👑 Premium-Paket - „Premium Performance“</h2>
+      <p><strong>Einmalpreis:</strong> € 7.400,--</p>
+      <ul>
+        <li>
+          <strong>Webseite:</strong>
+          <ul>
+            <li>Individuelles Design mit bis zu 8 Seiten</li>
+            <li>Technische SEO & PageSpeed-Optimierung</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Google Ads:</strong>
+          <ul>
+            <li>Bis zu 4 Kampagnen</li>
+            <li>4 Wochen Optimierung</li>
+            <li>Tracking, Zielgruppen, Remarketing</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Social Media Ads:</strong>
+          <ul>
+            <li>2 Plattformen (Facebook + Instagram)</li>
+            <li>6 Anzeigenformate inkl. Video</li>
+            <li>4 Wochen Betreuung & Reporting</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="ideal">
+        ➡️ Ideal für: Unternehmen mit ambitionierten Wachstumszielen.
+      </p>
+
+      <p><strong>Inhalt Betreuung:</strong></p>
+      <ul>
+        <li>Laufende Kampagnenoptimierung</li>
+        <li>Performance-Reports</li>
+        <li>SEO-Analyse</li>
+        <li>Webpflege inkl. Erweiterungen</li>
+        <li>Strategie-Call oder Vorort-Termin</li>
+      </ul>
+    </div>
+
+    <p class="zusammenarbeit">
+      Erfolg entsteht, wenn die Zusammenarbeit stimmt. <br />
+      Lass uns in einem kostenlosen Info-Gespräch herausfinden, ob die Chemie
+      passt und dein Projekt bei mir in den richtigen Händen ist. 😉
+    </p>
+    <a
+      class="cta-button"
+      href="https://calendly.com/alexandra-vukits82/30min"
+      target="_blank"
+      >Info-Gespräch buchen</a
+    >
+  </body>
+</html>
