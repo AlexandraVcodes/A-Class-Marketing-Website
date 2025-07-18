@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+     <!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
+        <style>
       body {
         font-family: Arial, sans-serif;
         color: black;
@@ -35,7 +36,6 @@
         padding-top: 20px;
         margin-top: 20px;
       }
-
       .du-suchst {
         text-align: center;
         color: #68247a;
@@ -67,7 +67,6 @@
         max-width: 600px;
         display: block;
       }
-
       .zusammenarbeit {
         color: #68247a;
         font-weight: 500;
@@ -80,7 +79,6 @@
         max-width: 600px;
         display: block;
       }
-
       .cta-button {
         display: block;
         width: fit-content;
@@ -98,6 +96,21 @@
       .cta-button:hover {
         background-color: #501a5c;
       }
+      .bild-desktop {
+        float: right;
+        width: 220px;
+        margin-left: 10px;
+        margin-right: -10px;
+        border-radius: 12px;
+        display: block;
+      }
+      .bild-mobil {
+        display: none;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 12px;
+      }
       @media screen and (max-width: 768px) {
         body {
           padding: 10px;
@@ -112,65 +125,40 @@
         ul {
           padding-left: 15px;
         }
-
         .highlight {
           font-size: 1.2rem;
           padding: 10px;
           margin-left: auto;
           margin-right: auto;
         }
+        .bild-desktop {
+          display: none;
+        }
+        .bild-mobil {
+          display: block;
+        }
       }
     </style>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container d-flex justify-content-between align-items-center">
-        <!-- Logo links -->
         <a class="navbar-brand" href="https://www.a-class-marketing.at/">
-          <img
-            src="sources/Logo_ohne Schriftzug.png"
-            alt="Logo"
-            width="80"
-            height="80"
-          />
+          <img src="sources/Logo_ohne Schriftzug.png" alt="Logo" width="80" height="80" />
         </a>
-
-        <!-- Menü links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Über mich</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projekte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="imprint.html"
-                >Impressum & Datenschutz</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kontaktformular.html">Kontakt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="preise.html">Pakete & Preise</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Über mich</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projekte</a></li>
+            <li class="nav-item"><a class="nav-link" href="imprint.html">Impressum & Datenschutz</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontaktformular.html">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" href="preise.html">Pakete & Preise</a></li>
           </ul>
         </div>
-
-        <!-- Toggle Button (Mobil) -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -179,55 +167,18 @@
     <div class="einleitung">
       <p><strong>Du willst …</strong></p>
       <ul>
-        <li>
-          <strong
-            >keine irrelevanten Anzeigen, sondern Google Ads, die deine
-            Zielgruppe im richtigen Moment erreichen</strong
-          >
-          und eine echte Verbindung zu deiner Marke schaffen.
-        </li>
-        <li>
-          <strong>Kund*innen, die zu dir passen</strong> - Menschen, die durch
-          gezielte Suchbegriffe genau DICH finden und sich auf deiner Webseite
-          sofort angesprochen fühlen.
-        </li>
-        <li>
-          <strong
-            >dass deine Werte und Visionen nicht nur in Anzeigen, sondern auch
-            auf deiner Webseite klar und überzeugend zum Ausdruck kommen</strong
-          >
-          – vom ersten Eindruck bis zum letzten Klick.
-        </li>
-        <li>
-          <strong
-            >als Expert*in wahrgenommen werden, mit einer Webseite, die
-            Vertrauen aufbaut</strong
-          >, professionell wirkt und deine Kompetenz visuell wie inhaltlich
-          unterstreicht.
-        </li>
-        <li>
-          <strong>Qualität und das gewisse Etwas</strong> - eine Website, die
-          nicht nur gut aussieht, sondern strategisch aufgebaut ist und perfekt
-          mit deinen Kampagnen zusammenspielt.
-        </li>
+        <img src="images/Foto_Alexandra_kleiner.jpg" alt="Das ist Alexandra Vukits" class="bild-desktop" />
+        <li><strong>keine irrelevanten Anzeigen, sondern Google Ads, die deine Zielgruppe im richtigen Moment erreichen</strong> und eine echte Verbindung zu deiner Marke schaffen.</li>
+        <li><strong>Kund*innen, die zu dir passen</strong> - Menschen, die durch gezielte Suchbegriffe genau DICH finden und sich auf deiner Webseite sofort angesprochen fühlen.</li>
+        <li><strong>dass deine Werte und Visionen nicht nur in Anzeigen, sondern auch auf deiner Webseite klar und überzeugend zum Ausdruck kommen</strong> – vom ersten Eindruck bis zum letzten Klick.</li>
+        <li><strong>als Expert*in wahrgenommen werden, mit einer Webseite, die Vertrauen aufbaut</strong>, professionell wirkt und deine Kompetenz visuell wie inhaltlich unterstreicht.</li>
+        <li><strong>Qualität und das gewisse Etwas</strong> - eine Website, die nicht nur gut aussieht, sondern strategisch aufgebaut ist und perfekt mit deinen Kampagnen zusammenspielt.</li>
       </ul>
-      <p class="du-suchst">
-        Klingt genau nach dem, was du suchst?<br />
-        Dann lass uns gemeinsam loslegen - ganz nach deinem Bedarf:<br />
-        Ob du gerade erst startest, deine Performance verbessern willst oder ein
-        rundum strategisches Gesamtpaket brauchst - ich habe drei durchdachte
-        Angebote für dich:
-      </p>
-      <p class="highlight">
-        💼Basic. 🚀Smart. 👑Premium. <br />Drei Pakete - ein Ziel: messbarer
-        Erfolg.🙌
-      </p>
-      <a
-        class="cta-button"
-        href="https://calendly.com/alexandra-vukits82/30min"
-        target="_blank"
-        >Info-Gespräch buchen</a
-      >
+      <p class="du-suchst">Klingt genau nach dem, was du suchst?<br />Dann lass uns gemeinsam loslegen ...</p>
+      <p class="highlight">💼Basic. 🚀Smart. 👑Premium. <br />Drei Pakete - ein Ziel: messbarer Erfolg.🙌</p>
+      <a class="cta-button" href="https://calendly.com/alexandra-vukits82/30min" target="_blank">📞 Gratis Info-Gespräch buchen</a>
+      <img src="images/Foto_Alexandra_kleiner.jpg" alt="Das ist Alexandra Vukits" class="bild-mobil" />
+    </div>
     </div>
 
     <div class="paket">
@@ -370,7 +321,53 @@
       class="cta-button"
       href="https://calendly.com/alexandra-vukits82/30min"
       target="_blank"
-      >Info-Gespräch buchen</a
+      >📞 Gratis Info-Gespräch buchen</a
     >
+    <br/>
+    <br/>
+
+    <section class="sommer-aktion">
+      <div
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem"
+      >
+        <div style="flex: 1 1 250px">
+          <h2>☀️ Sommer‑Boost für dein Business – 15 % Rabatt auf alles!</h2>
+          <p>
+            📆 Buchbar bis inkl. <strong>31. Juli 2025</strong> – auf Pakete
+            <em>und</em> Einzelleistungen!
+          </p>
+
+          <ul>
+            <li>
+              ✅ <strong>Google Ads</strong> – mehr Sichtbarkeit, mehr Anfragen
+            </li>
+            <li>
+              ✅ <strong>Social Media Ads</strong> – zielgerichtete Werbung, die
+              konvertiert
+            </li>
+            <li>
+              ✅ <strong>Social Media Content</strong> – Inhalte, die deine
+              Marke stark machen
+            </li>
+            <li>✅ <strong>Webseite</strong> – modern, klar & verkaufsstark</li>
+          </ul>
+
+          <p>
+            💡 <strong>Kombinierbar oder einzeln buchbar</strong> – ganz wie
+            du’s brauchst!<br />
+            💸 Spare jetzt <strong>15 %</strong>!
+          </p>
+
+          <p>❓Hast du Fragen zum Sommer-Rabatt oder zu den Angeboten?</p>
+          <a
+            href="https://calendly.com/alexandra-vukits82/30min"
+            class="cta-button"
+            >📞 Gratis-Infogespräch buchen</a
+          >
+        </div>
+
+        
+      </div>
+    </section>
   </body>
 </html>
