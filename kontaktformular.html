@@ -53,6 +53,25 @@
         src="https://www.facebook.com/tr?id=4363308120660360&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+     <!-- Event snippet for Kontaktformular-Aufruf conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17340305101/R96rCNmJ0o4bEM2dwMxA',
+      'value': 1.0,
+      'currency': 'EUR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
