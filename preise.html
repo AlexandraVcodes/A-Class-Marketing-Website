@@ -48,6 +48,24 @@
         src="https://www.facebook.com/tr?id=4363308120660360&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+                 <!-- Event snippet for Terminbuchen-Button conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17340305101/leh0CNyJ0o4bEM2dwMxA',
+      'value': 1.0,
+      'currency': 'EUR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -908,28 +926,10 @@
               href="https://calendly.com/alexandra-vukits82/30min"
               target="_blank"
               class="btn btn-primary"
+              onclick="gtag_report_conversion(); return false;"
             >
               Kostenloses Erstgespräch sichern
-            </a>
-            <!-- Event snippet for Terminbuchen-Button conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17340305101/leh0CNyJ0o4bEM2dwMxA',
-      'value': 1.0,
-      'currency': 'EUR',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
+           
             <a
               href="https://www.a-class-marketing.at/kontaktformular.html"
               target="_blank"
