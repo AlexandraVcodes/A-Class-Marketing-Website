@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Canva Advanced Workshop – Social-Media-Edition | 19.03.2026</title>
+        <link
+      rel="icon"
+      href="sources/Logo_ohne Schriftzug.png"
+      type="image/icon"
+    />
+    <meta
+      name="description"
+      content="Canva Advanced Workshop (Social-Media-Edition) am 19.03.2026 von 17:30 bis 20:00 Uhr – online via Microsoft Teams oder live in Guntramsdorf. Jetzt anmelden."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Canva Advanced Workshop – 19.03.2026" />
+    <meta
+      property="og:description"
+      content="Für Fortgeschrittene mit Basiskenntnissen in Canva: Transparenzen, Ebenen, Animationen, Reels, Karussells, Vorlagen & Brand-Kit."
+    />
+    <meta property="og:type" content="website" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17340305101"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17340305101");
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFM6V5V4D4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SFM6V5V4D4');
+</script>
+
+    <!-- JSON-LD: Event -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Canva Workshop Advanced – Social-Media-Edition",
+        "description": "Für Fortgeschrittene mit Basiskenntnissen in Canva: Transparenzen, Ebenen, Animationen, Reels, Karussells, scroll-stoppende Posts, Vorlagen & Brand-Kit. Am Ende: eigenes Vorlagen-Set.",
+        "startDate": "2026-03-19T17:30:00+01:00",
+        "endDate": "2026-03-19T20:00:00+01:00",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": [
+          {
+            "@type": "VirtualLocation",
+            "url": "https://www.microsoft.com/microsoft-teams/"
+          },
+          {
+            "@type": "Place",
+            "name": "Lebe.Stark (OFI)",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hauptstraße 46",
+              "postalCode": "2353",
+              "addressLocality": "Guntramsdorf",
+              "addressCountry": "AT"
+            }
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "99",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "A-Class Marketing e.U.",
+          "email": "alexandra@a-class-marketing.at"
+        }
+      }
+    </script>
+
+    <style>
+      :root {
+        --primary: #68247a;
+        --primary-dark: #501b5f;
+        --secondary: #fae6c3;
+        --ink: #0f172a;
+        --sub: #475569;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --radius: 22px;
+        --shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--ink);
+        background:
+          radial-gradient(
+            1200px 700px at 20% 10%,
+            rgba(104, 36, 122, 0.14),
+            transparent 60%
+          ),
+          linear-gradient(100deg, var(--secondary), #fff 35%, #fdfdfd);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      a {
+        color: inherit;
+      }
+      .container {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: 8px;
+        background: #fff;
+        border: 2px solid var(--primary);
+        padding: 10px 14px;
+        border-radius: 10px;
+        z-index: 999;
+      }
+      .skip-link:focus {
+        left: 16px;
+      }
+
+      header {
+        padding: 26px 0 10px;
+      }
+      .brandbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 10px 0 16px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .brand-badge {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), #2dd4bf);
+        box-shadow: var(--shadow);
+      }
+      .brand-name {
+        display: grid;
+        gap: 2px;
+        line-height: 1.1;
+      }
+      .brand-name strong {
+        font-size: 14px;
+        letter-spacing: 0.4px;
+      }
+      .brand-name span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .top-cta {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .btn {
+        appearance: none;
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        padding: 12px 16px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s ease;
+        white-space: nowrap;
+      }
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+      .btn-primary:hover {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+      }
+      .btn-outline {
+        background: #fff;
+        border-color: var(--border);
+        color: var(--primary);
+      }
+      .btn-outline:hover {
+        background: var(--secondary);
+      }
+
+      .hero {
+        display: grid;
+        gap: 20px;
+        align-items: center;
+        padding: 18px 0 26px;
+      }
+      @media (min-width: 980px) {
+        .hero {
+          grid-template-columns: 1.05fr 0.95fr;
+          gap: 40px;
+        }
+      }
+      .kicker {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(104, 36, 122, 0.08);
+        border: 1px solid rgba(104, 36, 122, 0.18);
+        color: var(--primary);
+        font-weight: 800;
+        font-size: 13px;
+      }
+      h1 {
+        margin: 12px 0 10px;
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.6px;
+      }
+      @media (min-width: 700px) {
+        h1 {
+          font-size: 46px;
+        }
+      }
+      .subtitle {
+        margin: 0;
+        color: var(--sub);
+        font-size: 16px;
+        line-height: 1.55;
+        max-width: 60ch;
+      }
+      @media (min-width: 700px) {
+        .subtitle {
+          font-size: 18px;
+        }
+      }
+
+      .facts {
+        margin-top: 16px;
+        display: grid;
+        gap: 10px;
+      }
+      @media (min-width: 640px) {
+        .facts {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      .fact {
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 12px 14px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+      .fact strong {
+        display: block;
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 4px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+      }
+      .fact span {
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .hero-actions {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      @media (min-width: 520px) {
+        .hero-actions {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+
+      .flyer {
+        position: relative;
+        background:
+          linear-gradient(135deg, rgba(104, 36, 122, 0.16), transparent), #fff;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px;
+        box-shadow: var(--shadow);
+      }
+      .flyer img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 16px;
+      }
+      .price-pill {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        padding: 10px 12px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #22d3ee, #60a5fa);
+        color: #062236;
+        font-weight: 900;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(255, 255, 255, 0.55);
+      }
+      .price-pill small {
+        display: block;
+        font-weight: 700;
+        opacity: 0.9;
+      }
+
+      section {
+        padding: 26px 0;
+      }
+      .section-title {
+        margin: 0 0 12px;
+        font-size: 24px;
+        letter-spacing: -0.3px;
+        color: var(--primary);
+      }
+      @media (min-width: 700px) {
+        .section-title {
+          font-size: 30px;
+        }
+      }
+
+      .two-col {
+        display: grid;
+        gap: 18px;
+      }
+      @media (min-width: 900px) {
+        .two-col {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px;
+        }
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      ul.clean {
+        margin: 10px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      ul.clean li {
+        display: grid;
+        grid-template-columns: 22px 1fr;
+        gap: 10px;
+        align-items: start;
+        color: var(--sub);
+        line-height: 1.5;
+      }
+      ul.clean li::before {
+        content: "✓";
+        font-weight: 900;
+        color: var(--primary);
+        line-height: 1;
+        margin-top: 2px;
+      }
+
+      .badge-row {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .badge {
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(250, 230, 195, 0.75);
+        border: 1px solid rgba(104, 36, 122, 0.18);
+        color: var(--ink);
+        font-weight: 800;
+        font-size: 13px;
+      }
+
+      /* Form */
+      .form-wrap {
+        scroll-margin-top: 12px;
+      }
+      form {
+        display: grid;
+        gap: 14px;
+      }
+
+      .form-head {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 14px;
+        border-radius: 18px;
+        background: rgba(104, 36, 122, 0.08);
+        border: 1px solid rgba(104, 36, 122, 0.2);
+      }
+      .form-head label {
+        display: grid;
+        gap: 4px;
+        cursor: pointer;
+      }
+      .form-head strong {
+        font-size: 16px;
+        letter-spacing: -0.2px;
+      }
+      .form-head span {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .form-head input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        margin-top: 2px;
+        accent-color: var(--primary);
+      }
+
+      .grid-2 {
+        display: grid;
+        gap: 12px;
+      }
+      @media (min-width: 740px) {
+        .grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .grid-3 {
+        display: grid;
+        gap: 12px;
+      }
+      @media (min-width: 740px) {
+        .grid-3 {
+          grid-template-columns: 1.2fr 0.6fr 0.8fr;
+        }
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+      .field label {
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--ink);
+      }
+      .req {
+        color: var(--primary);
+        font-weight: 900;
+        margin-left: 4px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 12px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        font: inherit;
+        background: #fff;
+        outline: none;
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: rgba(104, 36, 122, 0.55);
+        box-shadow: 0 0 0 4px rgba(104, 36, 122, 0.12);
+      }
+      .help {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .form-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 6px;
+      }
+      @media (min-width: 520px) {
+        .form-actions {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+
+      .privacy {
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      footer {
+        padding: 26px 0 34px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .footgrid {
+        display: grid;
+        gap: 10px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+      }
+      @media (min-width: 820px) {
+        .footgrid {
+          grid-template-columns: 1fr auto;
+          align-items: center;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+      /* ✅ Fix: Foto nicht in Breite „ziehen“ / keine Aspect-Ratio erzwingen */
+      .speaker-photo {
+        margin: 10px 0 0;
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid rgba(104, 36, 122, 0.18);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .speaker-photo img {
+        display: block;
+        width: 100%;
+        height: auto; /* ✅ wichtig: erhält Seitenverhältnis */
+        max-height: 520px; /* optional: begrenzt Höhe am Desktop */
+        object-fit: contain; /* ✅ nichts abschneiden, keine Verzerrung */
+        background: #fff; /* wirkt sauber, falls „contain“ Balken erzeugt */
+      }
+
+      .speaker-photo figcaption {
+        padding: 10px 12px;
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      @media (min-width: 900px) {
+        .speaker-photo img {
+          max-height: 420px;
+        }
+      }
+      select {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  font: inherit;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+select:focus {
+  border-color: rgba(104, 36, 122, 0.55);
+  box-shadow: 0 0 0 4px rgba(104, 36, 122, 0.12);
+}
+
+      
+      /* Navbar CSS (Desktop & Mobile) */
+
+      .navbar {
+        display: flex;
+        justify-content: flex-start; /* Links ausrichten */
+        align-items: center;
+        padding: 10px 16px;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .navbar-brand {
+        order: 0;
+        margin-right: 30px; /* Abstand zwischen Logo und Menü */
+      }
+
+      .navbar-toggler {
+        order: 1;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        display: none; /* Standard: nicht sichtbar */
+        align-items: center;
+        gap: 8px;
+      }
+
+      .navbar-toggler span {
+        font-size: 24px;
+      }
+
+      .navbar-toggler-label {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      .navbar-collapse {
+        order: 2;
+      }
+
+      .navbar-nav {
+        display: flex;
+        gap: 20px;
+        list-style: none; /* Keine Auflistungspunkte in Desktop-Version */
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: var(--ink);
+        font-weight: 500;
+        padding: 8px 12px;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover {
+        color: var(--primary-color);
+      }
+
+      /* Mobile Ansicht */
+      @media (max-width: 992px) {
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .navbar-brand {
+          order: -2;
+          margin-bottom: 10px;
+        }
+        .navbar-toggler {
+          display: flex; /* Nur mobil sichtbar */
+          order: -1;
+          margin-bottom: 10px;
+          font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+            Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+        .navbar-collapse {
+          width: 100%;
+          display: none;
+        }
+        .navbar-collapse.show {
+          display: block;
+        }
+        .navbar-nav {
+          flex-direction: column;
+          width: 100%;
+        }
+        .nav-link {
+          padding: 10px;
+          border-bottom: 1px solid var(--border);
+          width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="https://www.a-class-marketing.at/">
+        <img
+          src="sources/Logo_ohne Schriftzug.png"
+          alt="Logo"
+          width="80"
+          height="80"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon">☰ Menü</span>
+      </button>
+      <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">Über mich</a></li>
+          <li><a class="nav-link" href="projects.html">Projekte</a></li>
+          <li>
+            <a class="nav-link" href="imprint.html"
+              >Impressum &amp; Datenschutz</a
+            >
+          </li>
+          <li><a class="nav-link" href="kontaktformular.html">Kontakt</a></li>
+          <li>
+            <a class="nav-link" href="preise.html">Pakete &amp; Preise</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a class="skip-link" href="#anmeldung">Zum Anmeldeformular springen</a>
+
+    <header>
+      <div class="container">
+        <div class="brandbar" role="navigation" aria-label="Top Navigation">
+          <a class="brand" href="#" aria-label="Zur Startseite">
+            <span class="brand-badge" aria-hidden="true"></span>
+            <span class="brand-name">
+              <strong>A-Class Marketing e.U.</strong>
+              <span>Canva Workshop – Advanced</span>
+            </span>
+          </a>
+
+          <div class="top-cta">
+            <a class="btn btn-outline" href="#details">Details</a>
+            <a class="btn btn-primary" href="#anmeldung">Jetzt anmelden</a>
+          </div>
+        </div>
+
+        <div class="hero">
+          <div>
+            <div class="kicker">
+              Für Fortgeschrittene – mit Basiskenntnissen in Canva
+            </div>
+            <h1>Canva Advanced: die Social-Media-Edition</h1>
+            <p class="subtitle">
+              Lerne, wie du mit Transparenzen, Ebenen und Animationen
+              scroll-stoppende Inhalte erstellst – inklusive Vorlagen &
+              Brand-Kit, damit du künftig schneller professionellen Content
+              produzierst.
+            </p>
+
+            <div class="facts" aria-label="Workshop Eckdaten">
+              <div class="fact">
+                <strong>Wann</strong>
+                <span>19.03.2026 · 17:30–20:00 Uhr</span>
+              </div>
+              <div class="fact">
+                <strong>Wo</strong>
+                <span
+                  >Online via Microsoft Teams oder live in Guntramsdorf</span
+                >
+              </div>
+              <div class="fact">
+                <strong>Preis</strong>
+                <span>€ 99 (exkl. USt.)</span>
+              </div>
+              <div class="fact">
+                <strong>Ort live</strong>
+                <span>Hauptstraße 46, 2353 Guntramsdorf (Lebe.Stark Loft)</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#anmeldung">Platz sichern</a>
+              <a class="btn btn-outline" href="#ablauf">Was dich erwartet</a>
+            </div>
+          </div>
+
+          <aside class="flyer" aria-label="Workshop Flyer">
+            <img
+              src="images/Flyer Canva Advanced Workshop 19.03.2026.jpg"
+              alt="Flyer: Canva Workshop Advanced am 19.03.2026"
+              loading="lazy"
+            />
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="details">
+        <div class="container two-col">
+          <article class="card">
+            <h2 class="section-title">Du bist hier richtig, wenn du …</h2>
+            <ul class="clean">
+              <li>
+                Canva schon nutzt und das volle Potenzial für starke
+                Social-Media-Designs ausschöpfen willst
+              </li>
+              <li>
+                Posts, Reels und Karussells auf ein professionelles Level heben
+                möchtest
+              </li>
+              <li>
+                mehr Struktur und Marken-Qualität in deinen Content bringen
+                willst
+              </li>
+            </ul>
+            <div class="badge-row" aria-label="Schwerpunkte">
+              <span class="badge">Transparenzen</span>
+              <span class="badge">Ebenen</span>
+              <span class="badge">Animationen</span>
+              <span class="badge">Reels</span>
+              <span class="badge">Karussells</span>
+              <span class="badge">Vorlagen</span>
+              <span class="badge">Brand-Kit</span>
+            </div>
+          </article>
+
+          <article class="card" id="ablauf">
+            <h2 class="section-title">Das erwartet dich</h2>
+            <ul class="clean">
+              <li>
+                Nutze Transparenzen, Ebenen & Animationen, um Reels, Karussells
+                und scroll-stoppende Posts zu gestalten.
+              </li>
+              <li>
+                Mit Vorlagen & Brand-Kit produzierst du schneller Content für
+                Instagram & LinkedIn – ohne jedes Mal bei Null zu starten.
+              </li>
+              <li>
+                Am Ende hast du dein eigenes Set an Vorlagen – perfekt für
+                Instagram, LinkedIn oder Präsentationen.
+              </li>
+            </ul>
+
+            <h3 style="margin: 18px 0 8px; color: var(--primary)">
+              Was du mitbringen solltest
+            </h3>
+            <ul class="clean">
+              <li>deinen Laptop</li>
+              <li>kostenlosen Canva-Account (oder Pro, wenn vorhanden)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="container two-col">
+          <article class="card">
+            <h2 class="section-title">Von der Praxis für die Praxis</h2>
+            <p style="margin: 0; color: var(--sub); line-height: 1.6">
+              Ich teile meine Erfahrungen aus Marketing & Business-Alltag –
+              klar, ehrlich, auf den Punkt.
+            </p>
+
+            <div style="margin-top: 14px; display: grid; gap: 10px">
+              <div
+                style="
+                  padding: 12px 14px;
+                  border-radius: 18px;
+                  background: rgba(250, 230, 195, 0.55);
+                  border: 1px solid rgba(104, 36, 122, 0.16);
+                "
+              >
+                <strong style="display: block; color: var(--primary)"
+                  >Alexandra Vukits</strong
+                >
+                <span style="color: var(--sub)">A-Class Marketing e.U.</span
+                ><br />
+                <span style="color: var(--muted)"
+                  >www.a-class-marketing.at</span
+                >
+              </div>
+
+              <div
+                style="
+                  padding: 12px 14px;
+                  border-radius: 18px;
+                  background: rgba(250, 230, 195, 0.55);
+                  border: 1px solid rgba(104, 36, 122, 0.16);
+                "
+              >
+                <strong style="display: block; color: var(--primary)"
+                  >Special Guest: Sabine Linhart</strong
+                >
+                <span style="color: var(--sub)"
+                  >Mag. (FH) Sabine Linhart e.U.</span
+                ><br />
+                <span style="color: var(--muted)">www.lebestark.at</span>
+              </div>
+              <!-- ✅ NEU: gemeinsames Foto -->
+              <figure
+                class="speaker-photo"
+                aria-label="Alexandra Vukits und Sabine Linhart"
+              >
+                <img
+                  src="images/alexandra-sabine.jpg"
+                  alt="Alexandra Vukits und Sabine Linhart gemeinsam beim Canva Workshop"
+                  loading="lazy"
+                  width="1200"
+                  height="900"
+                />
+                <figcaption>
+                  Alexandra Vukits &amp; Sabine Linhart im Lebe.Stark Loft
+                  Guntramsdorf
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article
+            class="card form-wrap"
+            id="anmeldung"
+            aria-labelledby="formTitle"
+          >
+            <h2 class="section-title" id="formTitle">Anmelden</h2>
+
+            <!-- ✅ PHP Variante: action="send.php" -->
+            <form
+  id="signupForm"
+  method="post"
+  action="https://www.a-class-marketing.at/send.php"
+  novalidate
+>
+
+              <!-- Überschrift + Häkchen -->
+              <div class="form-head">
+                <input
+                  type="checkbox"
+                  id="confirm"
+                  name="confirm"
+                  required
+                  aria-describedby="confirmHelp"
+                />
+                <label for="confirm">
+                  <strong
+                    >Anmeldung für Canva-Advanced-Workshop am 19.03.2026, 17:30
+                    Uhr</strong
+                  >
+                  <span id="confirmHelp"
+                    >Bitte Häkchen setzen, um die Anmeldung zu bestätigen.</span
+                  >
+                </label>
+              </div>
+
+              <!-- Hidden meta -->
+              <input
+                type="hidden"
+                name="workshop_title"
+                value="Canva Advanced Workshop – Social-Media-Edition"
+              />
+              <input type="hidden" name="workshop_date" value="19.03.2026" />
+              <input type="hidden" name="workshop_time" value="17:30" />
+
+              <!-- Honeypot gegen Bots (muss leer bleiben) -->
+              <div
+                style="
+                  position: absolute;
+                  left: -9999px;
+                  top: auto;
+                  width: 1px;
+                  height: 1px;
+                  overflow: hidden;
+                "
+                aria-hidden="true"
+              >
+                <label
+                  >Bitte nicht ausfüllen:
+                  <input
+                    type="text"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
+                </label>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="vorname">Vorname<span class="req">*</span></label>
+                  <input
+                    id="vorname"
+                    name="vorname"
+                    type="text"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="nachname"
+                    >Nachname<span class="req">*</span></label
+                  >
+                  <input
+                    id="nachname"
+                    name="nachname"
+                    type="text"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email"
+                  >E-Mailadresse<span class="req">*</span></label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="company"
+                    >Firmenname <span class="help">(freiwillig)</span></label
+                  >
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    autocomplete="organization"
+                  />
+                </div>
+                <div class="field">
+                  <label for="phone"
+                    >Telefonnummer <span class="help">(freiwillig)</span></label
+                  >
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    inputmode="tel"
+                  />
+                </div>
+              </div>
+
+              <div class="grid-3" aria-label="Anschrift">
+                <div class="field">
+                  <label for="street">Straße<span class="req">*</span></label>
+                  <input
+                    id="street"
+                    name="street"
+                    type="text"
+                    autocomplete="address-line1"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="house"
+                    >Hausnummer<span class="req">*</span></label
+                  >
+                  <input
+                    id="house"
+                    name="house"
+                    type="text"
+                    autocomplete="address-line2"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="zip">PLZ<span class="req">*</span></label>
+                  <input
+                    id="zip"
+                    name="zip"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="postal-code"
+                    pattern="[0-9]{4,6}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="city">Ort<span class="req">*</span></label>
+                <input
+                  id="city"
+                  name="city"
+                  type="text"
+                  autocomplete="address-level2"
+                  required
+                />
+              </div>
+              <div class="field">
+  <label for="attendance">
+    Ich nehme teil:<span class="req">*</span>
+  </label>
+  <select id="attendance" name="attendance" required>
+    <option value="">Bitte auswählen</option>
+    <option value="vor Ort">vor Ort</option>
+    <option value="online">online</option>
+  </select>
+</div>
+
+
+              <div class="field">
+                <label for="questions"
+                  >Weitere Fragen <span class="help">(freiwillig)</span></label
+                >
+                <textarea
+                  id="questions"
+                  name="questions"
+                  placeholder="Deine Nachricht (optional)"
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Verbindlich anmelden
+                </button>
+                <a class="btn btn-outline" href="#details">Details ansehen</a>
+              </div>
+
+              <p class="privacy">
+                Mit dem Absenden des Formulars erklärst du dich damit
+                einverstanden, dass deine angegebenen Daten zur Bearbeitung
+                deiner Anmeldung verarbeitet werden. Weitere Informationen
+                findest du im
+                <a
+                  href="https://www.a-class-marketing.at/imprint.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Datenschutzhinweis von A-Class Marketing </a
+                >.
+              </p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footgrid">
+        <div>
+          <strong style="color: var(--primary)">A-Class Marketing e.U.</strong
+          ><br />
+          Kontakt:
+          <a href="mailto:alexandra@a-class-marketing.at"
+            >alexandra@a-class-marketing.at</a
+          >
+        </div>
+        <div>© <span id="year"></span> · Canva Advanced Workshop</div>
+      </div>
+    </footer>
+
+    <script>
+      // Kleinigkeiten: Year + client-side validation UX
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const form = document.getElementById("signupForm");
+      form.addEventListener("submit", (e) => {
+        // Browser Validation nutzen, aber mit Fokus-Hilfe
+        if (!form.checkValidity()) {
+          e.preventDefault();
+          const firstInvalid = form.querySelector(":invalid");
+          if (firstInvalid) {
+            firstInvalid.focus({ preventScroll: true });
+            firstInvalid.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

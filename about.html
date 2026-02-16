@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -37,7 +37,7 @@
         window,
         document,
         "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
+        "https://connect.facebook.net/en_US/fbevents.js",
       );
       fbq("init", "4363308120660360");
       fbq("track", "PageView");
@@ -50,6 +50,21 @@
         src="https://www.facebook.com/tr?id=4363308120660360&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SFM6V5V4D4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SFM6V5V4D4");
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -86,8 +101,14 @@
         --radius: 22px;
       }
       body {
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-          Helvetica, Arial;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial;
         margin: 0;
         background: linear-gradient(
           100deg,
@@ -257,8 +278,16 @@
           display: flex; /* Nur mobil sichtbar */
           order: -1;
           margin-bottom: 10px;
-          font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-            Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+          font-family:
+            ui-sans-serif,
+            system-ui,
+            -apple-system,
+            Segoe UI,
+            Roboto,
+            Helvetica,
+            Arial,
+            "Apple Color Emoji",
+            "Segoe UI Emoji";
         }
         .navbar-collapse {
           width: 100%;
