@@ -606,6 +606,43 @@
         align-items: center;
       }
 
+      .offer-photo {
+        margin: 0 auto 28px;
+        max-width: 980px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+      }
+
+      .offer-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      /* Mobile */
+      @media (max-width: 768px) {
+        .offer-photo {
+          max-width: 100%;
+          border-radius: 18px;
+          margin-bottom: 18px;
+        }
+
+        .offer-photo img {
+          max-height: 320px;
+          object-fit: cover;
+        }
+      }
+
+      /* Kleine Smartphones */
+      @media (max-width: 480px) {
+        .offer-photo img {
+          max-height: 240px;
+        }
+      }
+
       @media (min-width: 840px) {
         .cta-card {
           grid-template-columns: 1fr auto;
@@ -854,6 +891,13 @@
     <main>
       <section id="angebote" aria-labelledby="angebote-heading">
         <div class="container">
+          <figure class="offer-photo">
+            <img
+              src="images/Foto auf Bank im Profil_klein.jpg"
+              alt="Alexandra Vukits mit Laptop auf einer Bank"
+              loading="lazy"
+            />
+          </figure>
           <div class="section-head">
             <h2 class="section-title" id="angebote-heading">
               Wähle deine passende Begleitung
