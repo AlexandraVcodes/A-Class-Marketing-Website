@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Strategische Umsetzung & 1:1-Begleitung | A-Class Marketing</title>
+    <link
+      rel="icon"
+      href="sources/Logo_ohne Schriftzug.png"
+      type="image/icon"
+    />
+    <meta
+      name="description"
+      content="Strategische Umsetzung und 1:1-Begleitung Light oder Premium: 3 Monate individuelle Sichtbarkeits-, Content- und Businessbegleitung. Einstieg jederzeit möglich."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <meta
+      property="og:title"
+      content="Strategische Umsetzung & 1:1-Begleitung"
+    />
+    <meta
+      property="og:description"
+      content="Light- und Premium-Begleitung für Positionierung, Sichtbarkeit, Content, Angebote und Kundengewinnung. Kostenloses Erstgespräch buchen."
+    />
+    <meta property="og:type" content="website" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Strategische Umsetzung und 1:1-Begleitung",
+        "description": "Dreimonatige strategische Sichtbarkeits-, Content- und Businessbegleitung in den Varianten Light und Premium.",
+        "provider": {
+          "@type": "Organization",
+          "name": "A-Class Marketing e.U.",
+          "url": "https://www.a-class-marketing.at/"
+        },
+        "areaServed": "AT",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Strategische Umsetzung und 1:1-Begleitung Light",
+            "price": "690",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Strategische Umsetzung und 1:1-Begleitung Premium",
+            "price": "990",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      :root {
+        --primary: #68247a;
+        --primary-dark: #501b5f;
+        --secondary: #fae6c3;
+        --ink: #0f172a;
+        --sub: #475569;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --card: rgba(255, 255, 255, 0.92);
+        --radius: 22px;
+        --shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--ink);
+        background:
+          radial-gradient(
+            1100px 650px at 20% 8%,
+            rgba(104, 36, 122, 0.14),
+            transparent 62%
+          ),
+          linear-gradient(100deg, var(--secondary), #fff 35%, #fdfdfd);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .container {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: 8px;
+        background: #fff;
+        border: 2px solid var(--primary);
+        padding: 10px 14px;
+        border-radius: 10px;
+        z-index: 999;
+      }
+
+      .skip-link:focus {
+        left: 16px;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 16px;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .navbar-brand {
+        order: 0;
+        margin-right: 30px;
+      }
+
+      .navbar-toggler {
+        order: 1;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        gap: 8px;
+        color: var(--ink);
+      }
+
+      .navbar-collapse {
+        order: 2;
+      }
+
+      .navbar-nav {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: var(--ink);
+        font-weight: 500;
+        padding: 8px 12px;
+        transition: color 0.2s ease;
+      }
+
+      .nav-link:hover,
+      .nav-link:focus-visible {
+        color: var(--primary);
+      }
+
+      header {
+        padding: 28px 0 22px;
+      }
+
+      .brandbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 10px 0 22px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+
+      .brand-badge {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), #2dd4bf);
+        box-shadow: var(--shadow);
+      }
+
+      .brand-name {
+        display: grid;
+        gap: 2px;
+        line-height: 1.1;
+      }
+
+      .brand-name strong {
+        font-size: 14px;
+        letter-spacing: 0.4px;
+      }
+
+      .brand-name span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .top-cta,
+      .hero-actions,
+      .cta-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        appearance: none;
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        padding: 13px 18px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s ease;
+        text-align: center;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus-visible {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+      }
+
+      .btn-outline {
+        background: #fff;
+        border-color: var(--border);
+        color: var(--primary);
+      }
+
+      .btn-outline:hover,
+      .btn-outline:focus-visible {
+        background: var(--secondary);
+      }
+
+      .hero {
+        display: grid;
+        gap: 22px;
+        align-items: center;
+      }
+
+      @media (min-width: 980px) {
+        .hero {
+          grid-template-columns: 1.08fr 0.92fr;
+          gap: 42px;
+        }
+      }
+
+      .kicker {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(104, 36, 122, 0.08);
+        border: 1px solid rgba(104, 36, 122, 0.18);
+        color: var(--primary);
+        font-weight: 900;
+        font-size: 13px;
+      }
+
+      h1 {
+        margin: 14px 0 12px;
+        font-size: clamp(34px, 6vw, 58px);
+        line-height: 1.05;
+        letter-spacing: -0.9px;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--sub);
+        font-size: clamp(16px, 2vw, 19px);
+        line-height: 1.58;
+        max-width: 64ch;
+      }
+
+      .facts {
+        margin-top: 18px;
+        display: grid;
+        gap: 10px;
+      }
+
+      @media (min-width: 640px) {
+        .facts {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .fact {
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 13px 15px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+
+      .fact strong {
+        display: block;
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 4px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+      }
+
+      .fact span {
+        font-weight: 850;
+      }
+
+      .hero-actions {
+        margin-top: 18px;
+      }
+
+      .hero-card {
+        background:
+          linear-gradient(
+            135deg,
+            rgba(104, 36, 122, 0.14),
+            rgba(250, 230, 195, 0.45)
+          ),
+          #fff;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-card h2 {
+        margin: 0 0 12px;
+        color: var(--primary);
+        font-size: 28px;
+        letter-spacing: -0.4px;
+      }
+
+      .hero-card p {
+        margin: 0;
+        color: var(--sub);
+        line-height: 1.6;
+      }
+
+      .hero-card ul {
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+
+      .hero-card li {
+        display: grid;
+        grid-template-columns: 26px 1fr;
+        gap: 10px;
+        color: var(--sub);
+        line-height: 1.5;
+      }
+
+      .hero-card li::before {
+        content: "✓";
+        display: grid;
+        place-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      section {
+        padding: 32px 0;
+      }
+
+      .section-head {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 24px;
+      }
+
+      .section-title {
+        margin: 0 0 10px;
+        color: var(--primary);
+        font-size: clamp(26px, 4vw, 38px);
+        letter-spacing: -0.4px;
+      }
+
+      .section-text {
+        margin: 0;
+        color: var(--sub);
+        line-height: 1.6;
+      }
+
+      .offer-grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      @media (min-width: 920px) {
+        .offer-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          align-items: start;
+        }
+      }
+
+      .offer-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      .offer-summary {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        text-align: left;
+        color: inherit;
+      }
+
+      .offer-top {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
+        align-items: center;
+        padding: 22px;
+      }
+
+      .offer-title {
+        margin: 0;
+        color: var(--primary);
+        font-size: clamp(22px, 3vw, 30px);
+        line-height: 1.15;
+      }
+
+      .offer-subtitle {
+        display: block;
+        margin-top: 8px;
+        color: var(--sub);
+        font-weight: 700;
+        line-height: 1.4;
+      }
+
+      .arrow {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: rgba(104, 36, 122, 0.1);
+        color: var(--primary);
+        font-size: 22px;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .offer-card.is-open .arrow {
+        transform: rotate(180deg);
+        background: var(--secondary);
+      }
+
+      .price-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 22px 22px;
+      }
+
+      .pill {
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(250, 230, 195, 0.75);
+        border: 1px solid rgba(104, 36, 122, 0.18);
+        color: var(--ink);
+        font-weight: 850;
+        font-size: 13px;
+      }
+
+      .offer-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-top: 1px solid transparent;
+      }
+
+      .offer-card.is-open .offer-content {
+        border-top-color: var(--border);
+      }
+
+      .offer-inner {
+        padding: 22px;
+      }
+
+      .offer-inner h3 {
+        margin: 20px 0 8px;
+        color: var(--primary);
+        font-size: 19px;
+      }
+
+      .offer-inner h3:first-child {
+        margin-top: 0;
+      }
+
+      .offer-inner h4 {
+        margin: 16px 0 8px;
+        color: var(--ink);
+        font-size: 16px;
+      }
+
+      .offer-inner p {
+        margin: 8px 0 0;
+        color: var(--sub);
+        line-height: 1.65;
+      }
+
+      .clean-list {
+        margin: 10px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 8px;
+      }
+
+      .clean-list li {
+        display: grid;
+        grid-template-columns: 22px 1fr;
+        gap: 9px;
+        align-items: start;
+        color: var(--sub);
+        line-height: 1.5;
+      }
+
+      .clean-list li::before {
+        content: "✓";
+        color: var(--primary);
+        font-weight: 900;
+        line-height: 1;
+        margin-top: 4px;
+      }
+
+      .month-box {
+        margin-top: 14px;
+        padding: 15px;
+        border-radius: 18px;
+        background: rgba(250, 230, 195, 0.4);
+        border: 1px solid rgba(104, 36, 122, 0.14);
+      }
+
+      .cta-section {
+        padding: 42px 0 50px;
+      }
+
+      .cta-card {
+        background: linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+        color: #fff;
+        border-radius: var(--radius);
+        padding: clamp(24px, 5vw, 42px);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 16px;
+        align-items: center;
+      }
+
+      @media (min-width: 840px) {
+        .cta-card {
+          grid-template-columns: 1fr auto;
+        }
+      }
+
+      .cta-card h2 {
+        margin: 0 0 8px;
+        font-size: clamp(25px, 4vw, 38px);
+      }
+
+      .cta-card p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.86);
+        line-height: 1.6;
+      }
+
+      .cta-card .btn {
+        background: #fff;
+        color: var(--primary);
+      }
+
+      footer {
+        padding: 26px 0 34px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .footgrid {
+        display: grid;
+        gap: 10px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+      }
+
+      @media (min-width: 820px) {
+        .footgrid {
+          grid-template-columns: 1fr auto;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 992px) {
+        body {
+          background: #fdfdfd;
+        }
+
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar-brand {
+          order: -2;
+          margin-bottom: 10px;
+        }
+
+        .navbar-toggler {
+          display: flex;
+          order: -1;
+          margin-bottom: 10px;
+        }
+
+        .navbar-collapse {
+          width: 100%;
+          display: none;
+        }
+
+        .navbar-collapse.show {
+          display: block;
+        }
+
+        .navbar-nav {
+          flex-direction: column;
+          width: 100%;
+          gap: 0;
+        }
+
+        .nav-link {
+          display: block;
+          padding: 10px;
+          border-bottom: 1px solid var(--border);
+          width: 100%;
+        }
+
+        .brandbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .top-cta,
+        .hero-actions,
+        .cta-row {
+          width: 100%;
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#angebote">Zu den Angeboten springen</a>
+
+    <nav class="navbar" aria-label="Hauptnavigation">
+      <a class="navbar-brand" href="https://www.a-class-marketing.at/">
+        <img
+          src="sources/Logo_ohne Schriftzug.png"
+          alt="A-Class Marketing Logo"
+          width="80"
+          height="80"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon">☰ Menü</span>
+      </button>
+      <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">Über mich</a></li>
+          <li><a class="nav-link" href="projects.html">Projekte</a></li>
+          <li>
+            <a class="nav-link" href="imprint.html"
+              >Impressum &amp; Datenschutz</a
+            >
+          </li>
+          <li><a class="nav-link" href="kontaktformular.html">Kontakt</a></li>
+          <li>
+            <a class="nav-link" href="preise.html">Pakete &amp; Preise</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="brandbar" role="navigation" aria-label="Seitennavigation">
+          <a
+            class="brand"
+            href="https://www.a-class-marketing.at/"
+            aria-label="Zur Startseite von A-Class Marketing"
+          >
+            <span class="brand-badge" aria-hidden="true"></span>
+            <span class="brand-name">
+              <strong>A-Class Marketing e.U.</strong>
+              <span>Strategische Umsetzung &amp; 1:1-Begleitung</span>
+            </span>
+          </a>
+
+          <div class="top-cta">
+            <a class="btn btn-outline" href="#angebote">Angebote ansehen</a>
+            <a
+              class="btn btn-primary"
+              href="https://calendly.com/alexandra-vukits82/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kostenloses Erstgespräch buchen</a
+            >
+          </div>
+        </div>
+
+        <div class="hero">
+          <div>
+            <div class="kicker">
+              Start ab 01.06.2026 · Einstieg jederzeit möglich
+            </div>
+            <h1>Strategische Umsetzung und 1:1-Begleitung</h1>
+            <p class="subtitle">
+              Für Unternehmer:innen, die ihre Positionierung schärfen, sichtbar
+              werden und ihre Kundengewinnung mit klarer Strategie und
+              persönlicher Begleitung aufbauen möchten.
+            </p>
+
+            <div class="facts" aria-label="Eckdaten der Begleitung">
+              <div class="fact">
+                <strong>Start</strong>
+                <span>01.06.2026</span>
+              </div>
+              <div class="fact">
+                <strong>Dauer</strong>
+                <span>3 Monate</span>
+              </div>
+              <div class="fact">
+                <strong>Einstieg</strong>
+                <span>Jederzeit möglich</span>
+              </div>
+              <div class="fact">
+                <strong>Format</strong>
+                <span>Individuelle 1:1-Begleitung</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://calendly.com/alexandra-vukits82/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kostenloses Erstgespräch buchen</a
+              >
+              <a class="btn btn-outline" href="#angebote"
+                >Light &amp; Premium vergleichen</a
+              >
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Kurzüberblick">
+            <h2>Mehr Klarheit. Mehr Sichtbarkeit. Mehr Struktur.</h2>
+            <p>
+              In der Begleitung arbeitest du an deiner Außenwirkung, deinem
+              Content, deiner Angebotsstruktur und an konkreten
+              Sichtbarkeitsroutinen, die zu dir und deinem Business passen.
+            </p>
+            <ul>
+              <li>Positionierung und Brand Voice schärfen</li>
+              <li>Contentstrategie und Kund:innenreise entwickeln</li>
+              <li>
+                Instagram, Facebook, YouTube und Website gezielt optimieren
+              </li>
+              <li>Strategische Impulse für nachhaltige Kundengewinnung</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="angebote" aria-labelledby="angebote-heading">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" id="angebote-heading">
+              Wähle deine passende Begleitung
+            </h2>
+            <p class="section-text">
+              Klicke auf den Pfeil, um die detaillierte Angebotsbeschreibung zu
+              öffnen.
+            </p>
+          </div>
+
+          <div class="offer-grid">
+            <article class="offer-card">
+              <button class="offer-summary" type="button" aria-expanded="false">
+                <div class="offer-top">
+                  <div>
+                    <h2 class="offer-title">
+                      Strategische Umsetzung und 1:1-Begleitung Light
+                    </h2>
+                    <span class="offer-subtitle"
+                      >Strategische Sichtbarkeits- &amp; Contentbegleitung</span
+                    >
+                  </div>
+                  <span class="arrow" aria-hidden="true">⌄</span>
+                </div>
+              </button>
+              <div class="price-row" aria-label="Preis und Laufzeit Light">
+                <span class="pill">690 € netto / Monat</span>
+                <span class="pill">Mindestlaufzeit: 3 Monate</span>
+              </div>
+
+              <div class="offer-content">
+                <div class="offer-inner">
+                  <h3>Enthaltene Leistungen</h3>
+                  <ul class="clean-list">
+                    <li>
+                      1 Strategie-Call und 1 Feedback-Call pro Monat, je ca. 60
+                      Minuten
+                    </li>
+                    <li>
+                      Individuelle Contentplanung inklusive Themenfindung und
+                      Struktur
+                    </li>
+                    <li>
+                      Unterstützung bei Positionierung, Brand Voice,
+                      Angebotsstruktur und Sichtbarkeitsroutinen
+                    </li>
+                    <li>Strategische Impulse zur Kundengewinnung</li>
+                  </ul>
+
+                  <h3>Ziel der Begleitung</h3>
+                  <p>
+                    Die Light-Begleitung unterstützt dich dabei, eine klare
+                    Positionierung aufzubauen, sichtbar zu werden und Schritt
+                    für Schritt eine professionelle Außenwirkung sowie eine
+                    nachhaltige Kundengewinnung zu entwickeln.
+                  </p>
+
+                  <h3>Leistungsübersicht</h3>
+                  <div class="month-box">
+                    <h4>Monat 1 — Fundament &amp; Klarheit</h4>
+                    <p>
+                      <strong>Ziel:</strong> Positionierung schärfen und
+                      Vertrauen aufbauen.
+                    </p>
+                    <ul class="clean-list">
+                      <li>Zielgruppe und Wunschkund:innen konkretisieren</li>
+                      <li>
+                        Bedürfnisse, Herausforderungen, Sprache und
+                        Ausdrucksweise analysieren
+                      </li>
+                      <li>
+                        Positionierung, individuelle Stärken und
+                        Alleinstellungsmerkmale herausarbeiten
+                      </li>
+                      <li>
+                        Markenbotschaft, Kernbotschaften und zentrale Themen
+                        definieren
+                      </li>
+                      <li>
+                        Brand Voice und authentische Kommunikationsweise
+                        entwickeln
+                      </li>
+                      <li>
+                        Instagram-, Facebook- und YouTube-Profil optimieren
+                      </li>
+                      <li>
+                        Website-Feedback zu Startseite, Außenwirkung und
+                        Call-to-Actions
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="month-box">
+                    <h4>Monat 2 — Sichtbarkeit &amp; Content</h4>
+                    <p>
+                      <strong>Ziel:</strong> Sichtbar werden, ohne dich zu
+                      verbiegen.
+                    </p>
+                    <ul class="clean-list">
+                      <li>
+                        Individuelle Contentstrategie für Social Media
+                        entwickeln
+                      </li>
+                      <li>
+                        Relevante Content-Themen und realistische
+                        Contentstruktur definieren
+                      </li>
+                      <li>
+                        Ideen für Reels, Storys, Carousel-Posts und persönliche
+                        Inhalte
+                      </li>
+                      <li>
+                        2-wöchentliches Feedback zu Captions, Hooks, CTAs und
+                        emotionaler Klarheit
+                      </li>
+                      <li>
+                        Unterstützung beim Thema Sichtbarkeit und sicherer vor
+                        der Kamera werden
+                      </li>
+                      <li>Grundlegende Reel-Strategie</li>
+                    </ul>
+                  </div>
+
+                  <div class="month-box">
+                    <h4>
+                      Monat 3 — Vertrauen, Angebotsstruktur &amp; nachhaltige
+                      Sichtbarkeit
+                    </h4>
+                    <p>
+                      <strong>Ziel:</strong> Aus Sichtbarkeit echte Anfragen
+                      machen.
+                    </p>
+                    <ul class="clean-list">
+                      <li>Angebotsstruktur analysieren und optimieren</li>
+                      <li>
+                        Einfache Kund:innenreise und CTA-Strategie entwickeln
+                      </li>
+                      <li>Gesprächsanfragen erleichtern</li>
+                      <li>
+                        Testimonials und Social Proof für Social Media
+                        vorbereiten
+                      </li>
+                      <li>
+                        Ideen für Kooperationen und Sichtbarkeit entwickeln
+                      </li>
+                      <li>
+                        Nachhaltige Wochenstruktur, Postingroutine und
+                        Content-Workflow aufbauen
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h3>Abschluss des 3. Monats</h3>
+                  <ul class="clean-list">
+                    <li>Gemeinsame Reflexion der Zusammenarbeit</li>
+                    <li>Analyse erfolgreicher Inhalte und Strategien</li>
+                    <li>Empfehlungen für die nächsten Schritte</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="offer-card">
+              <button class="offer-summary" type="button" aria-expanded="false">
+                <div class="offer-top">
+                  <div>
+                    <h2 class="offer-title">
+                      Strategische Umsetzung und 1:1-Begleitung Premium
+                    </h2>
+                    <span class="offer-subtitle"
+                      >Intensive 1:1 Strategie- &amp; Businessbegleitung</span
+                    >
+                  </div>
+                  <span class="arrow" aria-hidden="true">⌄</span>
+                </div>
+              </button>
+              <div class="price-row" aria-label="Preis und Laufzeit Premium">
+                <span class="pill">990 € netto / Monat</span>
+                <span class="pill">Mindestlaufzeit: 3 Monate</span>
+              </div>
+
+              <div class="offer-content">
+                <div class="offer-inner">
+                  <h3>Enthaltene Leistungen</h3>
+                  <ul class="clean-list">
+                    <li>
+                      2 intensive Strategie-Calls und 2 Feedback-Calls pro
+                      Monat, je ca. 90 Minuten
+                    </li>
+                    <li>Individuelle Content- und Sichtbarkeitsstrategie</li>
+                    <li>
+                      Laufendes, detailliertes Feedback zu Content, Texten,
+                      Angeboten, Außenwirkung und Positionierung
+                    </li>
+                    <li>
+                      Gemeinsame Entwicklung von Brand Voice, Angebotsstruktur,
+                      Kundengewinnungsstrategie und Sichtbarkeitsroutinen
+                    </li>
+                    <li>
+                      Persönliche strategische Begleitung zwischen den Calls
+                    </li>
+                    <li>
+                      Priorisierter Messenger-Support für Rückfragen und
+                      schnelle Feedbackschleifen
+                    </li>
+                  </ul>
+
+                  <h3>Ziel der Begleitung</h3>
+                  <p>
+                    Die Premium-Begleitung unterstützt dich dabei, eine starke
+                    und professionelle Marke aufzubauen, Klarheit in
+                    Kommunikation und Angebot zu gewinnen sowie strategisch
+                    sichtbar zu werden, um gezielt passende Kund:innen
+                    anzuziehen.
+                  </p>
+
+                  <h3>Leistungsübersicht</h3>
+                  <div class="month-box">
+                    <h4>Monat 1 — Fundament &amp; Klarheit</h4>
+                    <p>
+                      <strong>Ziel:</strong> Positionierung schärfen und eine
+                      starke Markenbasis aufbauen.
+                    </p>
+                    <ul class="clean-list">
+                      <li>
+                        Tiefgehende Zielgruppenanalyse inklusive emotionaler
+                        Bedürfnisse, Sprache, Denkweise, Kaufmotive und
+                        Herausforderungen
+                      </li>
+                      <li>
+                        Intensive Positionierungsarbeit und klare
+                        Differenzierung entwickeln
+                      </li>
+                      <li>
+                        Persönliche Expertise sichtbar machen und berufliche
+                        Realität strategisch verbinden
+                      </li>
+                      <li>
+                        Starke Markenbotschaft, Signature-Themen und emotionale
+                        Kernbotschaften entwickeln
+                      </li>
+                      <li>
+                        Brand Voice ausarbeiten und Wiedererkennbarkeit stärken
+                      </li>
+                      <li>
+                        Instagram-, Facebook- und YouTube-Profil strategisch
+                        optimieren
+                      </li>
+                      <li>
+                        Intensives Website-Feedback zu emotionaler Klarheit,
+                        Transformation, Ergebnissen, Conversion und CTAs
+                      </li>
+                      <li>Testimonials und Social Proof vorbereiten</li>
+                      <li>
+                        Freebie-Produkt entwickeln und in die Customer Journey
+                        integrieren
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="month-box">
+                    <h4>Monat 2 — Sichtbarkeit &amp; Content</h4>
+                    <p>
+                      <strong>Ziel:</strong> Authentische Sichtbarkeit mit
+                      klarer Strategie aufbauen.
+                    </p>
+                    <ul class="clean-list">
+                      <li>Individuelle Premium-Contentstrategie entwickeln</li>
+                      <li>3–5 strategische Hauptthemen definieren</li>
+                      <li>
+                        Strukturierten Contentplan für Reels, Storys,
+                        Carousel-Posts, persönliche Inhalte, edukative Inhalte
+                        und Vertrauens-Content erstellen
+                      </li>
+                      <li>
+                        Detailliertes Feedback zu Captions, Hooks, Storytelling,
+                        CTAs und emotionaler Wirkung
+                      </li>
+                      <li>
+                        Sichtbarkeitstraining mit strategischem Einsatz
+                        persönlicher Geschichten
+                      </li>
+                      <li>Präsenz und Ausstrahlung stärken</li>
+                      <li>
+                        Individuelle Reel-Strategie und authentische
+                        Videoformate entwickeln
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="month-box">
+                    <h4>
+                      Monat 3 — Vertrauen, Angebotsstruktur &amp; nachhaltige
+                      Sichtbarkeit
+                    </h4>
+                    <p>
+                      <strong>Ziel:</strong> Sichtbarkeit gezielt in Anfragen
+                      und Kund:innen verwandeln.
+                    </p>
+                    <ul class="clean-list">
+                      <li>
+                        Strategische Angebotsstruktur mit Einstiegs- und
+                        Premium-Angeboten entwickeln
+                      </li>
+                      <li>Angebote verständlich und emotional kommunizieren</li>
+                      <li>
+                        Klare Kund:innenreise von Social Media bis zur Anfrage
+                        entwickeln
+                      </li>
+                      <li>
+                        Vertrauen gezielt aufbauen und Conversion-Prozesse
+                        verbessern
+                      </li>
+                      <li>Intensive CTA- und DM-Strategie entwickeln</li>
+                      <li>
+                        Verkaufsprozesse und Gesprächseinladungen klar
+                        formulieren
+                      </li>
+                      <li>
+                        Testimonials und Social Proof strategisch einsetzen
+                      </li>
+                      <li>
+                        Netzwerk, Kooperationen, Workshops sowie digitale und
+                        lokale Sichtbarkeit erweitern
+                      </li>
+                      <li>
+                        Individuelle Wochenstruktur und effiziente
+                        Contentprozesse aufbauen
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h3>Abschluss des 3. Monats</h3>
+                  <ul class="clean-list">
+                    <li>Strategische Reflexion der gesamten Begleitung</li>
+                    <li>Analyse erfolgreicher Inhalte und Resonanz</li>
+                    <li>Optimierungspotenziale definieren</li>
+                    <li>
+                      Konkreten Wachstumsplan für die Zeit nach der
+                      Zusammenarbeit entwickeln
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2 id="cta-heading">Du hast Fragen zur Begleitung?</h2>
+              <p>
+                Buche dir ein kostenloses Erstgespräch. Gemeinsam klären wir, ob
+                Light oder Premium besser zu deinen Zielen passt.
+              </p>
+            </div>
+            <a
+              class="btn"
+              href="https://calendly.com/alexandra-vukits82/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kostenloses Erstgespräch buchen</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footgrid">
+        <div>
+          <strong style="color: var(--primary)">A-Class Marketing e.U.</strong
+          ><br />
+          Kontakt:
+          <a href="mailto:alexandra@a-class-marketing.at"
+            >alexandra@a-class-marketing.at</a
+          >
+        </div>
+        <div>
+          © <span id="year"></span> · Strategische Umsetzung &amp;
+          1:1-Begleitung
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile Navbar Toggle
+      (function () {
+        const toggler = document.querySelector(".navbar-toggler");
+        const targetSel = toggler
+          ? toggler.getAttribute("data-bs-target")
+          : null;
+        const target = targetSel ? document.querySelector(targetSel) : null;
+
+        if (!toggler || !target) return;
+
+        toggler.addEventListener("click", function () {
+          const isOpen = target.classList.toggle("show");
+          this.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        target.querySelectorAll("a.nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (window.innerWidth < 992) {
+              target.classList.remove("show");
+              toggler.setAttribute("aria-expanded", "false");
+            }
+          });
+        });
+      })();
+
+      // Accessible Offer Dropdowns
+      (function () {
+        const cards = document.querySelectorAll(".offer-card");
+
+        function setContentHeight(card, open) {
+          const content = card.querySelector(".offer-content");
+          const button = card.querySelector(".offer-summary");
+
+          if (open) {
+            card.classList.add("is-open");
+            button.setAttribute("aria-expanded", "true");
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            card.classList.remove("is-open");
+            button.setAttribute("aria-expanded", "false");
+            content.style.maxHeight = "0px";
+          }
+        }
+
+        cards.forEach((card) => {
+          const button = card.querySelector(".offer-summary");
+
+          button.addEventListener("click", () => {
+            const shouldOpen = !card.classList.contains("is-open");
+            setContentHeight(card, shouldOpen);
+          });
+        });
+
+        window.addEventListener("resize", () => {
+          cards.forEach((card) => {
+            if (card.classList.contains("is-open")) {
+              const content = card.querySelector(".offer-content");
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
