@@ -256,6 +256,39 @@
         padding-top: calc(var(--grid) * 2);
       }
 
+      /* Offer section with photo */
+      .offer-layout {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: calc(var(--grid) * 6);
+        align-items: start;
+      }
+      .offer-photo {
+        margin: 0;
+      }
+      .offer-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+      }
+      .offer-content .col-3 {
+        margin-top: calc(var(--grid) * 2);
+        grid-template-columns: 1fr;
+        gap: calc(var(--grid) * 3);
+      }
+
+      @media (max-width: 720px) {
+        .offer-layout {
+          grid-template-columns: 1fr;
+          gap: calc(var(--grid) * 4);
+        }
+        .offer-photo {
+          max-width: 280px;
+          margin: 0 auto;
+        }
+      }
+
       ul.checklist {
         list-style: none;
       }
@@ -400,29 +433,42 @@
 
     <section class="alt" id="angebote">
       <div class="container">
-        <span class="eyebrow">Inhalte</span>
-        <h2>Was dich erwartet</h2>
-        <div class="col-3">
-          <div class="card">
-            <h3>Positionierung mit Klarheit</h3>
-            <p>
-              Du erfährst, wofür du stehen kannst, was dich von anderen
-              unterscheidet und wie du dein Angebot verständlich kommunizierst.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Zielgruppe verstehen</h3>
-            <p>
-              Du bekommst mehr Klarheit darüber, wer deine idealen Kund:innen
-              sind, welche Probleme sie haben und was sie wirklich brauchen.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Wording & Ansprache</h3>
-            <p>
-              Du lernst, wie du Formulierungen entwickelst, die Vertrauen
-              schaffen und deine Zielgruppe emotional erreichen.
-            </p>
+        <div class="offer-layout">
+          <figure class="offer-photo">
+            <img
+              src="https://www.a-class-marketing.at/images/Foto auf Bank im Profil_klein.jpg"
+              alt="Alexandra Vukits mit Laptop auf einer Bank"
+              loading="lazy"
+            />
+          </figure>
+          <div class="offer-content">
+            <span class="eyebrow">Inhalte</span>
+            <h2>Was dich erwartet</h2>
+            <div class="col-3">
+              <div class="card">
+                <h3>Positionierung mit Klarheit</h3>
+                <p>
+                  Du erfährst, wofür du stehen kannst, was dich von anderen
+                  unterscheidet und wie du dein Angebot verständlich
+                  kommunizierst.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Zielgruppe verstehen</h3>
+                <p>
+                  Du bekommst mehr Klarheit darüber, wer deine idealen
+                  Kund:innen sind, welche Probleme sie haben und was sie
+                  wirklich brauchen.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Wording & Ansprache</h3>
+                <p>
+                  Du lernst, wie du Formulierungen entwickelst, die Vertrauen
+                  schaffen und deine Zielgruppe emotional erreichen.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div style="text-align: center; margin-top: calc(var(--grid) * 6)">
@@ -676,28 +722,7 @@
                       text-align: left;
                     "
                   >
-                    <p>Anmeldung zum Webinar am 28.07. um 10 Uhr</p>
-                  </div>
-                </div>
-
-                <div style="padding: 8px 0">
-                  <div
-                    class="sib-form-block"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      font-size: 16px;
-                      text-align: left;
-                      color: #3c4858;
-                      background-color: transparent;
-                      text-align: left;
-                    "
-                  >
-                    <div class="sib-text-form-block">
-                      <p>
-                        Melde dich zu unserem Newsletter an, um auf dem
-                        Laufenden zu bleiben.
-                      </p>
-                    </div>
+                    <p>Anmeldung zum kostenlosen Webinar am 28.07. um 10 Uhr</p>
                   </div>
                 </div>
 
@@ -971,11 +996,10 @@
                       "
                     >
                       <p>
-                        Wir verwenden Brevo als unsere Marketing-Plattform.
-                        Indem du das Formular absendest, erklärst du dich
-                        einverstanden, dass die von dir angegebenen persönlichen
-                        Informationen an Brevo zur Bearbeitung übertragen werden
-                        gemäß den
+                        Ich verwende Brevo als Marketing-Plattform. Indem du das
+                        Formular absendest, erklärst du dich einverstanden, dass
+                        die von dir angegebenen persönlichen Informationen an
+                        Brevo zur Bearbeitung übertragen werden gemäß den
                         <a
                           href="https://www.brevo.com/de/legal/privacypolicy/"
                           target="_blank"
