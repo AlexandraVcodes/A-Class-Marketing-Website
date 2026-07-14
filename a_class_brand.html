@@ -1,0 +1,1716 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-Class Marketing – Brand Design System</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0a0a0a;
+        color: #c9a84c;
+      }
+      ::-webkit-scrollbar {
+        height: 3px;
+        width: 3px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #c9a84c;
+      }
+
+      /* NAV */
+      .top-nav {
+        background-color: #0a0a0a;
+        border-bottom: 1.5px solid #c9a84c;
+        display: flex;
+        padding: 0 28px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        overflow-x: auto;
+      }
+      .top-nav a {
+        font-family: monospace;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 14px 14px 12px;
+        color: rgba(201, 168, 76, 0.35);
+        text-decoration: none;
+        white-space: nowrap;
+        border-bottom: 2px solid transparent;
+      }
+      .top-nav a.on,
+      .top-nav a:hover {
+        color: #e8c96a;
+        border-bottom-color: #e8c96a;
+      }
+
+      /* HEADER */
+      .site-header {
+        background-color: #0a0a0a;
+        padding: 48px 28px 36px;
+        border-bottom: 1.5px solid #c9a84c;
+      }
+      .site-header .eyebrow {
+        font-family: monospace;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: rgba(201, 168, 76, 0.3);
+        margin-bottom: 10px;
+      }
+      .site-header h1 {
+        font-family: Georgia, serif;
+        font-size: 44px;
+        color: #e8c96a;
+        font-weight: 700;
+        line-height: 1.05;
+      }
+      .color-dots {
+        display: flex;
+        gap: 14px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .color-dot {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .color-dot span {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .color-dot label {
+        font-family: monospace;
+        font-size: 8px;
+        color: rgba(201, 168, 76, 0.3);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      /* PROGRESS */
+      .progress-bar {
+        background-color: #501b5f;
+        padding: 8px 28px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .progress-bar label {
+        font-family: monospace;
+        font-size: 8px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.35);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .progress-bar .bar {
+        flex: 1;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      .progress-bar .fill {
+        height: 100%;
+        background-color: #c9a84c;
+        width: 100%;
+      }
+
+      /* TAGS */
+      .tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .tag-gold {
+        font-family: monospace;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #e8c96a;
+        background-color: rgba(201, 168, 76, 0.1);
+        border: 1px solid #c9a84c;
+        padding: 4px 12px;
+        display: inline-block;
+      }
+      .tag-purple {
+        font-family: monospace;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #501b5f;
+        border: 1px solid rgba(80, 27, 95, 0.7);
+        padding: 4px 12px;
+        display: inline-block;
+      }
+
+      /* SECTIONS */
+      .section {
+        padding: 36px 28px;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .section-alt {
+        background-color: #0f0811;
+      }
+      .section-label {
+        font-family: monospace;
+        font-size: 8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(201, 168, 76, 0.38);
+        margin-bottom: 18px;
+      }
+      .section h2 {
+        font-family: Georgia, serif;
+        font-size: 28px;
+        color: #e8c96a;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .section p {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: rgba(201, 168, 76, 0.5);
+        line-height: 1.68;
+        margin-bottom: 16px;
+      }
+
+      /* GOLD LINE */
+      .gold-line {
+        width: 40px;
+        height: 2px;
+        background-color: #c9a84c;
+        margin: 14px 0;
+      }
+
+      /* BUTTONS */
+      .btn-primary {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #501b5f;
+        border: none;
+        padding: 12px 26px;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        display: inline-block;
+        text-decoration: none;
+      }
+      .btn-gold {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: #0a0a0a;
+        background-color: #c9a84c;
+        border: none;
+        padding: 12px 26px;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+      }
+      .btn-outline {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: #e8c96a;
+        background-color: transparent;
+        border: 1.5px solid #c9a84c;
+        padding: 11px 26px;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+      }
+      .btn-primary:hover {
+        background-color: #6b2680;
+      }
+      .btn-gold:hover {
+        background-color: #b8962a;
+      }
+      .btn-outline:hover {
+        background-color: rgba(201, 168, 76, 0.08);
+      }
+      .btn-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 6px;
+      }
+
+      /* CARDS */
+      .card {
+        background-color: #111111;
+        border: 1px solid rgba(201, 168, 76, 0.18);
+        padding: 18px 20px;
+      }
+      .card-gold-top {
+        border-top: 2px solid #e8c96a;
+      }
+      .card-purple {
+        background-color: #501b5f;
+        border: 1px solid rgba(80, 27, 95, 0.7);
+        padding: 18px 20px;
+      }
+      .grid3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      /* STATS */
+      .stat-val {
+        font-family: Georgia, serif;
+        font-size: 28px;
+        color: #e8c96a;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .stat-lbl {
+        font-family: monospace;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(201, 168, 76, 0.38);
+        margin-top: 6px;
+      }
+
+      /* PALETTE SWATCHES */
+      .swatch-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .swatch {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 14px;
+        background-color: #111111;
+        border: 1px solid rgba(201, 168, 76, 0.18);
+      }
+      .swatch-color {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .swatch-name {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      .swatch-hex {
+        font-family: monospace;
+        font-size: 8px;
+        letter-spacing: 1px;
+        color: #c9a84c;
+        margin-top: 2px;
+      }
+      .swatch-role {
+        font-family: monospace;
+        font-size: 8px;
+        color: rgba(201, 168, 76, 0.38);
+        text-align: right;
+        margin-left: auto;
+      }
+
+      /* HERO STRIP */
+      .color-strip {
+        display: flex;
+        height: 90px;
+        border: 1px solid rgba(201, 168, 76, 0.18);
+        margin-bottom: 20px;
+      }
+      .color-strip div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* SLIDE */
+      .slide {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        border: 1.5px solid #c9a84c;
+        overflow: hidden;
+        aspect-ratio: 16/9;
+      }
+      .slide-left {
+        background-color: #0a0a0a;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 1px solid rgba(201, 168, 76, 0.2);
+      }
+      .slide-right {
+        background-color: #111111;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .slide-dot {
+        width: 22px;
+        height: 22px;
+        background-color: #c9a84c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: monospace;
+        font-size: 9px;
+        font-weight: 700;
+        color: #0a0a0a;
+        flex-shrink: 0;
+      }
+      .slide-dot-p {
+        background-color: #501b5f;
+        color: #ffffff;
+      }
+      .slide-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .slide-dots-nav {
+        display: flex;
+        gap: 4px;
+        margin-top: 20px;
+      }
+
+      /* TESTIMONIAL */
+      .testi {
+        background-color: #111111;
+        border-left: 3px solid #e8c96a;
+        padding: 14px 18px;
+      }
+      .testi-p {
+        background-color: #501b5f;
+        border-left: 3px solid rgba(255, 255, 255, 0.3);
+        padding: 14px 18px;
+      }
+
+      /* PAIN */
+      .pain-item {
+        background-color: #111111;
+        border-left: 3px solid #e8c96a;
+        padding: 12px 16px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .pain-item-p {
+        background-color: #501b5f;
+        border-left: 3px solid rgba(255, 255, 255, 0.3);
+      }
+      .pain-num {
+        font-family: monospace;
+        font-size: 9px;
+        font-weight: 700;
+        color: #e8c96a;
+        flex-shrink: 0;
+      }
+
+      /* CTA BAR */
+      .cta-bar {
+        background-color: #501b5f;
+        padding: 36px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      /* FOOTER */
+      .site-footer {
+        background-color: #0a0a0a;
+        padding: 14px 28px;
+        border-top: 1.5px solid #c9a84c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* TYPE SCALE */
+      .type-row {
+        display: flex;
+        align-items: baseline;
+        gap: 16px;
+        margin-bottom: 12px;
+      }
+
+      /* CHECKLIST */
+      .checklist-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+        cursor: pointer;
+      }
+      .checkbox {
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid rgba(201, 168, 76, 0.25);
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 600px) {
+        .grid3 {
+          grid-template-columns: 1fr;
+        }
+        .grid2 {
+          grid-template-columns: 1fr;
+        }
+        .slide {
+          grid-template-columns: 1fr;
+          aspect-ratio: auto;
+        }
+        .cta-bar {
+          flex-direction: column;
+          text-align: center;
+        }
+        .site-header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="site-header">
+      <div class="eyebrow">
+        Brand Design System · Executive Gold × Royal Purple
+      </div>
+      <h1>A-Class Marketing</h1>
+      <div class="tags">
+        <span class="tag-gold">Alexandra Vukits</span>
+        <span class="tag-purple">Guntramsdorf · AT</span>
+        <span class="tag-gold">Digitales Marketing & Webdesign</span>
+      </div>
+      <div class="color-dots">
+        <div class="color-dot">
+          <span style="background-color: #0a0a0a"></span
+          ><label>Black #0A0A0A</label>
+        </div>
+        <div class="color-dot">
+          <span style="background-color: #501b5f"></span
+          ><label>Purple #501B5F</label>
+        </div>
+        <div class="color-dot">
+          <span style="background-color: #c9a84c"></span
+          ><label>Gold #C9A84C</label>
+        </div>
+        <div class="color-dot">
+          <span style="background-color: #e8c96a"></span
+          ><label>Gold Light #E8C96A</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <label>Brand Design System</label>
+      <div class="bar"><div class="fill"></div></div>
+      <span
+        style="
+          font-family: monospace;
+          font-size: 9px;
+          font-weight: 700;
+          color: #c9a84c;
+        "
+        >100%</span
+      >
+    </div>
+
+    <!-- NAV -->
+    <div class="top-nav">
+      <a href="#palette" class="on">Palette</a>
+      <a href="#type">Schriften</a>
+      <a href="#buttons">Buttons</a>
+      <a href="#slide">Slide</a>
+      <a href="#pakete">Pakete</a>
+      <a href="#salespage">Sales Page</a>
+    </div>
+
+    <!-- PALETTE -->
+    <div class="section" id="palette">
+      <div class="section-label">Farbpalette</div>
+
+      <div class="color-strip">
+        <div style="flex: 3; background-color: #0a0a0a">
+          <span
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.3);
+              letter-spacing: 2px;
+              text-transform: uppercase;
+            "
+            >Black · Purple · Gold</span
+          >
+        </div>
+        <div style="flex: 2; background-color: #501b5f"></div>
+        <div style="flex: 2; background-color: #c9a84c"></div>
+        <div style="flex: 1; background-color: #e8c96a"></div>
+        <div style="flex: 1; background-color: #ffffff"></div>
+      </div>
+
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch-color" style="background-color: #0a0a0a"></div>
+          <div>
+            <div class="swatch-name">Tiefschwarz</div>
+            <div class="swatch-hex">#0A0A0A</div>
+          </div>
+          <div class="swatch-role">Hintergrund</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-color" style="background-color: #111111"></div>
+          <div>
+            <div class="swatch-name">Card Surface</div>
+            <div class="swatch-hex">#111111</div>
+          </div>
+          <div class="swatch-role">Karten</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-color" style="background-color: #501b5f"></div>
+          <div>
+            <div class="swatch-name">Royal Purple</div>
+            <div class="swatch-hex">#501B5F</div>
+          </div>
+          <div class="swatch-role">Akzent · Buttons</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-color" style="background-color: #c9a84c"></div>
+          <div>
+            <div class="swatch-name">Executive Gold</div>
+            <div class="swatch-hex">#C9A84C</div>
+          </div>
+          <div class="swatch-role">Primärfarbe</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-color" style="background-color: #e8c96a"></div>
+          <div>
+            <div class="swatch-name">Gold Light</div>
+            <div class="swatch-hex">#E8C96A</div>
+          </div>
+          <div class="swatch-role">Überschriften</div>
+        </div>
+        <div class="swatch">
+          <div
+            class="swatch-color"
+            style="background-color: #ffffff; border: 1px solid #333"
+          ></div>
+          <div>
+            <div class="swatch-name" style="color: #888">Weiß</div>
+            <div class="swatch-hex">#FFFFFF</div>
+          </div>
+          <div class="swatch-role">Text auf Lila</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 16px" class="card">
+        <div class="section-label">Farbkombinationen</div>
+        <div class="grid2">
+          <div
+            style="
+              background-color: #0a0a0a;
+              border: 1px solid rgba(201, 168, 76, 0.18);
+              padding: 16px 14px;
+            "
+          >
+            <div
+              style="
+                font-family: Georgia, serif;
+                font-size: 16px;
+                font-weight: 700;
+                color: #e8c96a;
+              "
+            >
+              Gold auf Schwarz
+            </div>
+            <div
+              style="
+                font-family: monospace;
+                font-size: 7px;
+                color: rgba(201, 168, 76, 0.3);
+                margin-top: 5px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              "
+            >
+              Hauptkombination
+            </div>
+          </div>
+          <div style="background-color: #501b5f; padding: 16px 14px">
+            <div
+              style="
+                font-family: Georgia, serif;
+                font-size: 16px;
+                font-weight: 700;
+                color: #ffffff;
+              "
+            >
+              Weiß auf Lila
+            </div>
+            <div
+              style="
+                font-family: monospace;
+                font-size: 7px;
+                color: rgba(255, 255, 255, 0.35);
+                margin-top: 5px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              "
+            >
+              Buttons & CTAs
+            </div>
+          </div>
+          <div style="background-color: #c9a84c; padding: 16px 14px">
+            <div
+              style="
+                font-family: Georgia, serif;
+                font-size: 16px;
+                font-weight: 700;
+                color: #0a0a0a;
+              "
+            >
+              Schwarz auf Gold
+            </div>
+            <div
+              style="
+                font-family: monospace;
+                font-size: 7px;
+                color: rgba(0, 0, 0, 0.4);
+                margin-top: 5px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              "
+            >
+              Sekundär-Button
+            </div>
+          </div>
+          <div
+            style="
+              background-color: #111111;
+              border: 1px solid rgba(201, 168, 76, 0.18);
+              padding: 16px 14px;
+            "
+          >
+            <div
+              style="
+                font-family: Georgia, serif;
+                font-size: 16px;
+                font-weight: 700;
+                color: #e8c96a;
+              "
+            >
+              Gold auf Card
+            </div>
+            <div
+              style="
+                font-family: monospace;
+                font-size: 7px;
+                color: rgba(201, 168, 76, 0.3);
+                margin-top: 5px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              "
+            >
+              Cards & Kacheln
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="section section-alt" id="type">
+      <div class="section-label">Schriften</div>
+
+      <div
+        style="
+          background-color: #0a0a0a;
+          border: 1px solid rgba(201, 168, 76, 0.18);
+          padding: 28px 24px;
+          margin-bottom: 12px;
+        "
+      >
+        <div class="section-label">Georgia — Hauptüberschriften</div>
+        <div
+          style="
+            font-family: Georgia, serif;
+            font-size: 52px;
+            color: #e8c96a;
+            font-weight: 700;
+            line-height: 1;
+          "
+        >
+          A-Class
+        </div>
+        <div
+          style="
+            font-family: Georgia, serif;
+            font-size: 30px;
+            color: #c9a84c;
+            line-height: 1.1;
+            margin-top: 6px;
+            font-style: italic;
+          "
+        >
+          Executive Gold
+        </div>
+      </div>
+
+      <div
+        style="background-color: #501b5f; padding: 24px; margin-bottom: 12px"
+      >
+        <div class="section-label" style="color: rgba(255, 255, 255, 0.35)">
+          Georgia Italic — auf Lila
+        </div>
+        <div
+          style="
+            font-family: Georgia, serif;
+            font-size: 24px;
+            color: #ffffff;
+            line-height: 1.15;
+            font-style: italic;
+          "
+        >
+          Digitales Marketing,<br />das Ergebnisse bringt.
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 12px">
+        <div class="section-label">Type Scale</div>
+        <div class="type-row">
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 36px;
+              color: #e8c96a;
+              font-weight: 700;
+              min-width: 60px;
+            "
+          >
+            Aa
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.38);
+            "
+          >
+            H1 · 36px · Georgia Bold
+          </div>
+        </div>
+        <div class="type-row">
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 26px;
+              color: #e8c96a;
+              font-weight: 700;
+              min-width: 60px;
+            "
+          >
+            Aa
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.38);
+            "
+          >
+            H2 · 26px · Georgia
+          </div>
+        </div>
+        <div class="type-row">
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 18px;
+              color: #c9a84c;
+              font-weight: 700;
+              min-width: 60px;
+            "
+          >
+            Aa
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.38);
+            "
+          >
+            H3 · 18px · Georgia
+          </div>
+        </div>
+        <div class="type-row">
+          <div
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              color: rgba(201, 168, 76, 0.5);
+              min-width: 60px;
+            "
+          >
+            Aa
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.38);
+            "
+          >
+            Body · 14px · Arial
+          </div>
+        </div>
+        <div class="type-row">
+          <div
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 11px;
+              color: rgba(201, 168, 76, 0.38);
+              min-width: 60px;
+            "
+          >
+            Aa
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.38);
+            "
+          >
+            Caption · 11px · Arial
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUTTONS & ELEMENTE -->
+    <div class="section" id="buttons">
+      <div class="section-label">Buttons & Elemente</div>
+
+      <div class="card card-gold-top" style="margin-bottom: 12px">
+        <div class="section-label">Buttons</div>
+        <div class="btn-row">
+          <button class="btn-primary">Erstgespräch buchen →</button>
+          <button class="btn-gold">Angebot anfragen</button>
+          <button class="btn-outline">Mehr erfahren</button>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 12px">
+        <div class="section-label">Tags & Badges</div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px">
+          <span class="tag-gold">Google Ads</span>
+          <span class="tag-gold">Social Media</span>
+          <span class="tag-gold">SEO</span>
+          <span class="tag-purple">Premium</span>
+          <span class="tag-purple">Webdesign</span>
+        </div>
+      </div>
+
+      <div class="grid3" style="margin-bottom: 12px">
+        <div
+          class="card card-gold-top"
+          style="text-align: center; padding: 20px 14px"
+        >
+          <div style="font-size: 22px; margin-bottom: 10px">💼</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 15px;
+              color: #e8c96a;
+              font-weight: 700;
+              margin-bottom: 4px;
+            "
+          >
+            Basic
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 14px;
+              color: #c9a84c;
+              font-weight: 700;
+            "
+          >
+            € 1.900
+          </div>
+        </div>
+        <div class="card-purple" style="text-align: center; padding: 20px 14px">
+          <div style="font-size: 22px; margin-bottom: 10px">🚀</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 15px;
+              color: #ffffff;
+              font-weight: 700;
+              margin-bottom: 4px;
+            "
+          >
+            Smart
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 14px;
+              color: rgba(255, 255, 255, 0.85);
+              font-weight: 700;
+            "
+          >
+            € 3.900
+          </div>
+        </div>
+        <div
+          class="card card-gold-top"
+          style="text-align: center; padding: 20px 14px"
+        >
+          <div style="font-size: 22px; margin-bottom: 10px">👑</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 15px;
+              color: #e8c96a;
+              font-weight: 700;
+              margin-bottom: 4px;
+            "
+          >
+            Premium
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 14px;
+              color: #c9a84c;
+              font-weight: 700;
+            "
+          >
+            € 7.400
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE -->
+    <div class="section section-alt" id="slide">
+      <div class="section-label">Slide-Vorlage (16:9)</div>
+      <div class="slide">
+        <div class="slide-left">
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: rgba(201, 168, 76, 0.3);
+              margin-bottom: 8px;
+            "
+          >
+            A-Class Marketing
+          </div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 24px;
+              color: #e8c96a;
+              font-weight: 700;
+              line-height: 1.1;
+            "
+          >
+            Digitales<br />Marketing,<br /><em
+              style="color: #c9a84c; font-style: italic"
+              >das wirkt.</em
+            >
+          </div>
+          <div class="gold-line"></div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(201, 168, 76, 0.28);
+              letter-spacing: 1.5px;
+              text-transform: uppercase;
+            "
+          >
+            Alexandra Vukits
+          </div>
+        </div>
+        <div class="slide-right">
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: rgba(201, 168, 76, 0.38);
+              margin-bottom: 14px;
+            "
+          >
+            Ihre Leistungen
+          </div>
+          <div class="slide-item">
+            <div class="slide-dot">01</div>
+            <div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: #ffffff;
+                "
+              >
+                Digitales Marketing
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 10px;
+                  color: rgba(201, 168, 76, 0.4);
+                  margin-top: 2px;
+                "
+              >
+                SEO · SEA · Social Media
+              </div>
+            </div>
+          </div>
+          <div class="slide-item">
+            <div class="slide-dot slide-dot-p">02</div>
+            <div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: #ffffff;
+                "
+              >
+                Marketingberatung
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 10px;
+                  color: rgba(201, 168, 76, 0.4);
+                  margin-top: 2px;
+                "
+              >
+                Strategie & Technologien
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" style="margin-bottom: 0">
+            <div class="slide-dot">03</div>
+            <div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: #ffffff;
+                "
+              >
+                Webseitenerstellung
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 10px;
+                  color: rgba(201, 168, 76, 0.4);
+                  margin-top: 2px;
+                "
+              >
+                Design · Code · Hosting
+              </div>
+            </div>
+          </div>
+          <div class="slide-dots-nav">
+            <div
+              style="width: 20px; height: 2px; background-color: #c9a84c"
+            ></div>
+            <div
+              style="
+                width: 5px;
+                height: 2px;
+                background-color: rgba(201, 168, 76, 0.2);
+              "
+            ></div>
+            <div
+              style="
+                width: 5px;
+                height: 2px;
+                background-color: rgba(201, 168, 76, 0.2);
+              "
+            ></div>
+            <div
+              style="
+                width: 5px;
+                height: 2px;
+                background-color: rgba(201, 168, 76, 0.2);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAKETE -->
+    <div class="section" id="pakete">
+      <div class="section-label">Pakete & Preise</div>
+      <div class="grid3">
+        <div class="card card-gold-top">
+          <div style="font-size: 20px; margin-bottom: 10px">💼</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 15px;
+              color: #e8c96a;
+              font-weight: 700;
+              margin-bottom: 3px;
+            "
+          >
+            Basic
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 15px;
+              color: #c9a84c;
+              font-weight: 700;
+              margin-bottom: 5px;
+            "
+          >
+            € 1.900
+          </div>
+          <div
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 10px;
+              color: rgba(201, 168, 76, 0.42);
+              margin-bottom: 16px;
+            "
+          >
+            Onepager + 1 Kampagne
+          </div>
+          <button
+            class="btn-primary"
+            style="width: 100%; font-size: 11px; padding: 8px 12px"
+          >
+            Auswählen
+          </button>
+        </div>
+        <div class="card-purple">
+          <div
+            style="
+              font-family: monospace;
+              font-size: 7px;
+              font-weight: 700;
+              letter-spacing: 1.5px;
+              text-transform: uppercase;
+              color: rgba(255, 255, 255, 0.45);
+              margin-bottom: 8px;
+            "
+          >
+            Empfohlen
+          </div>
+          <div style="font-size: 20px; margin-bottom: 10px">🚀</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 15px;
+              color: #ffffff;
+              font-weight: 700;
+              margin-bottom: 3px;
+            "
+          >
+            Smart
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 15px;
+              color: rgba(255, 255, 255, 0.85);
+              font-weight: 700;
+              margin-bottom: 5px;
+            "
+          >
+            € 3.900
+          </div>
+          <div
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 10px;
+              color: rgba(255, 255, 255, 0.5);
+              margin-bottom: 16px;
+            "
+          >
+            5 Seiten + 2 Kampagnen
+          </div>
+          <button
+            class="btn-gold"
+            style="width: 100%; font-size: 11px; padding: 8px 12px"
+          >
+            Auswählen
+          </button>
+        </div>
+        <div class="card card-gold-top">
+          <div style="font-size: 20px; margin-bottom: 10px">👑</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 15px;
+              color: #e8c96a;
+              font-weight: 700;
+              margin-bottom: 3px;
+            "
+          >
+            Premium
+          </div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 15px;
+              color: #c9a84c;
+              font-weight: 700;
+              margin-bottom: 5px;
+            "
+          >
+            € 7.400
+          </div>
+          <div
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 10px;
+              color: rgba(201, 168, 76, 0.42);
+              margin-bottom: 16px;
+            "
+          >
+            8 Seiten + 4 Kampagnen
+          </div>
+          <button
+            class="btn-primary"
+            style="width: 100%; font-size: 11px; padding: 8px 12px"
+          >
+            Auswählen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALES PAGE -->
+    <div id="salespage">
+      <!-- Hero -->
+      <div
+        style="
+          background-color: #0a0a0a;
+          padding: 44px 28px;
+          border-bottom: 1px solid rgba(201, 168, 76, 0.18);
+          max-width: none;
+        "
+      >
+        <div style="max-width: 900px; margin: 0 auto">
+          <div class="section-label">A-Class Marketing · Alexandra Vukits</div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 36px;
+              color: #e8c96a;
+              font-weight: 700;
+              line-height: 1.05;
+            "
+          >
+            Digitales Marketing,<br />das
+            <em style="color: #c9a84c; font-style: italic">Ergebnisse</em>
+            bringt.
+          </div>
+          <div class="gold-line"></div>
+          <p style="max-width: 480px">
+            Website · Google Ads · Social Media — alles aus einer Hand. Für
+            Einzelunternehmer:innen und KMUs, die online wachsen wollen.
+          </p>
+          <div class="btn-row">
+            <button class="btn-primary">Kostenloses Erstgespräch →</button>
+            <button class="btn-outline">Pakete ansehen</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div
+        style="
+          background-color: #111111;
+          border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+        "
+      >
+        <div
+          style="
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 28px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+          "
+        >
+          <div
+            style="
+              text-align: center;
+              border-right: 1px solid rgba(201, 168, 76, 0.12);
+              padding: 10px;
+            "
+          >
+            <div class="stat-val">★★★★★</div>
+            <div class="stat-lbl">5-Sterne Bewertungen</div>
+          </div>
+          <div
+            style="
+              text-align: center;
+              border-right: 1px solid rgba(201, 168, 76, 0.12);
+              padding: 10px;
+            "
+          >
+            <div class="stat-val">3+</div>
+            <div class="stat-lbl">Jahre Erfahrung</div>
+          </div>
+          <div style="text-align: center; padding: 10px">
+            <div class="stat-val">100%</div>
+            <div class="stat-lbl">Messbare Ergebnisse</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pain -->
+      <div
+        style="
+          background-color: #0f0811;
+          border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+        "
+      >
+        <div style="max-width: 900px; margin: 0 auto; padding: 36px 28px">
+          <div class="section-label">Kennen Sie das?</div>
+          <div class="pain-item">
+            <div class="pain-num">01</div>
+            <div
+              style="
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                color: rgba(201, 168, 76, 0.8);
+              "
+            >
+              Du suchst eine Webseite, die wirklich überzeugt?
+            </div>
+          </div>
+          <div class="pain-item pain-item-p">
+            <div class="pain-num" style="color: #ffffff">02</div>
+            <div
+              style="
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.75);
+              "
+            >
+              Du willst online mehr Sichtbarkeit und neue Kunden?
+            </div>
+          </div>
+          <div class="pain-item" style="margin-bottom: 0">
+            <div class="pain-num">03</div>
+            <div
+              style="
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                color: rgba(201, 168, 76, 0.8);
+              "
+            >
+              Du brauchst Marketing, das messbare Ergebnisse bringt?
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div
+        style="
+          background-color: #111111;
+          border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+        "
+      >
+        <div style="max-width: 900px; margin: 0 auto; padding: 36px 28px">
+          <div class="section-label">Was Sie bekommen</div>
+          <div class="grid2">
+            <div class="card card-gold-top" style="padding: 16px 14px">
+              <div style="font-size: 20px; margin-bottom: 10px">🌐</div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #ffffff;
+                  margin-bottom: 3px;
+                "
+              >
+                Digitales Marketing
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 11px;
+                  color: rgba(201, 168, 76, 0.42);
+                "
+              >
+                SEO, SEA, Social Media
+              </div>
+            </div>
+            <div class="card-purple" style="padding: 16px 14px">
+              <div style="font-size: 20px; margin-bottom: 10px">🎯</div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #ffffff;
+                  margin-bottom: 3px;
+                "
+              >
+                Marketingberatung
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 11px;
+                  color: rgba(255, 255, 255, 0.5);
+                "
+              >
+                Strategie & Technologien
+              </div>
+            </div>
+            <div class="card card-gold-top" style="padding: 16px 14px">
+              <div style="font-size: 20px; margin-bottom: 10px">💻</div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #ffffff;
+                  margin-bottom: 3px;
+                "
+              >
+                Webseitenerstellung
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 11px;
+                  color: rgba(201, 168, 76, 0.42);
+                "
+              >
+                Design, Code, Hosting
+              </div>
+            </div>
+            <div class="card-purple" style="padding: 16px 14px">
+              <div style="font-size: 20px; margin-bottom: 10px">📊</div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #ffffff;
+                  margin-bottom: 3px;
+                "
+              >
+                Laufendes Reporting
+              </div>
+              <div
+                style="
+                  font-family: Arial, sans-serif;
+                  font-size: 11px;
+                  color: rgba(255, 255, 255, 0.5);
+                "
+              >
+                Messbar & transparent
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div
+        style="
+          background-color: #0a0a0a;
+          border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+        "
+      >
+        <div style="max-width: 900px; margin: 0 auto; padding: 36px 28px">
+          <div class="section-label">Das sagen meine Kund:innen</div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div class="testi">
+              <div
+                style="
+                  font-family: Georgia, serif;
+                  font-size: 13px;
+                  color: rgba(201, 168, 76, 0.85);
+                  line-height: 1.65;
+                  font-style: italic;
+                "
+              >
+                "Die Zusammenarbeit war sehr professionell und hat meine
+                Erwartungen übertroffen."
+              </div>
+              <div
+                style="
+                  font-family: monospace;
+                  font-size: 8px;
+                  color: #e8c96a;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-top: 8px;
+                "
+              >
+                Alina Z. · Kosmetikstudio · ★★★★★
+              </div>
+            </div>
+            <div class="testi-p">
+              <div
+                style="
+                  font-family: Georgia, serif;
+                  font-size: 13px;
+                  color: rgba(255, 255, 255, 0.8);
+                  line-height: 1.65;
+                  font-style: italic;
+                "
+              >
+                "Kompetente Beratung und schnelle Umsetzung — absolut
+                empfehlenswert!"
+              </div>
+              <div
+                style="
+                  font-family: monospace;
+                  font-size: 8px;
+                  color: rgba(255, 255, 255, 0.5);
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-top: 8px;
+                "
+              >
+                Markus M. · Physiotherapeut · ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-bar">
+        <div>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: rgba(255, 255, 255, 0.35);
+              margin-bottom: 8px;
+            "
+          >
+            Bereit für Wachstum?
+          </div>
+          <div
+            style="
+              font-family: Georgia, serif;
+              font-size: 26px;
+              color: #ffffff;
+              font-weight: 700;
+              line-height: 1.15;
+            "
+          >
+            Ich bringe Ihre Marke<br /><em style="color: #e8c96a"
+              >online ganz nach vorne.</em
+            >
+          </div>
+        </div>
+        <div>
+          <button
+            class="btn-gold"
+            style="font-size: 14px; padding: 14px 28px; white-space: nowrap"
+          >
+            Jetzt starten →
+          </button>
+          <div
+            style="
+              font-family: monospace;
+              font-size: 8px;
+              color: rgba(255, 255, 255, 0.25);
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              margin-top: 8px;
+              text-align: right;
+            "
+          >
+            Kostenlos · Unverbindlich
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="site-footer">
+      <span
+        style="
+          font-family: Georgia, serif;
+          font-size: 14px;
+          color: #e8c96a;
+          font-weight: 700;
+        "
+        >A-Class Marketing</span
+      >
+      <span
+        style="
+          font-family: monospace;
+          font-size: 8px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          color: rgba(201, 168, 76, 0.25);
+        "
+        >Brand Design System · Executive Gold × Royal Purple ·
+        a-class-marketing.at</span
+      >
+    </div>
+  </body>
+</html>
