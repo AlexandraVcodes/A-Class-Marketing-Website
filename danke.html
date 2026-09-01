@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Danke für deine Anmeldung | A-Class Marketing</title>
+    <title>
+      Danke für deine Anmeldung | Alexandra Vukits - A-Class Marketing
+    </title>
 
     <link
       rel="icon"
@@ -106,6 +108,27 @@
         color: var(--primary);
       }
 
+      .profile-photo-wrap {
+        margin: 0 auto 32px;
+        max-width: 460px;
+      }
+
+      .profile-photo {
+        width: 100%;
+        height: auto;
+
+        object-fit: cover;
+        object-position: center top;
+
+        border-radius: var(--radius);
+
+        border: 4px solid var(--secondary);
+
+        box-shadow: var(--shadow);
+
+        display: block;
+      }
+
       p {
         font-size: 1.15rem;
         line-height: 1.8;
@@ -151,6 +174,11 @@
           padding: 40px 28px;
         }
 
+        .profile-photo-wrap {
+          max-width: 320px;
+          margin-bottom: 24px;
+        }
+
         p {
           font-size: 1rem;
         }
@@ -168,17 +196,25 @@
 
       <h1>Vielen Dank für deine Anmeldung!</h1>
 
+      <div class="profile-photo-wrap">
+        <img
+          class="profile-photo"
+          src="images/Foto auf Bank im Profil_klein.jpg"
+          alt="Alexandra Vukits"
+        />
+      </div>
+
       <p>
         Ich freue mich sehr über deine Anmeldung zu meinem Webinar
         <strong>„Positionierung & Zielgruppenansprache“</strong>
-        am 28.07. um 10 Uhr. 😊
+        am 15.09.2026 um 19 Uhr. 😊
       </p>
 
       <p>Du bekommst zwei Tage vorm Webinar den Teilnahme-Link zugeschickt.</p>
 
       <p>Bis bald & liebe Grüße<br />Alexandra Vukits</p>
 
-      <a href="index.html" class="btn"> Zurück zur Website </a>
+      <a href="index.html" class="btn"> Zurück zur Webseite </a>
     </main>
   </body>
 </html>
