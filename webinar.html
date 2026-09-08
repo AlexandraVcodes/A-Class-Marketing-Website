@@ -709,19 +709,27 @@
           #sib-container input:-ms-input-placeholder {
             font-family: Helvetica, sans-serif;
             text-align: left;
-            color: #c0ccda;
+            color: #161617;
           }
 
           #sib-container input::placeholder {
             font-family: Helvetica, sans-serif;
             text-align: left;
-            color: #c0ccda;
+            color: #161617;
           }
 
           #sib-container textarea::placeholder {
             font-family: Helvetica, sans-serif;
             text-align: left;
-            color: #c0ccda;
+            color: #161617;
+          }
+
+          /* NEU: Sorgt dafür, dass eingegebener Text gut sichtbar ist,
+     unabängig davon, was Brevos eigenes Stylesheet vorgibt */
+          #sib-container input.input,
+          #sib-container textarea.input {
+            color: #161617 !important;
+            -webkit-text-fill-color: #161617 !important;
           }
 
           #sib-container a {
@@ -739,7 +747,7 @@
         <!-- START - We recommend to place the below code where you want the form in your website html  -->
         <div
           class="sib-form"
-          style="text-align: center; background-color: #eff2f7"
+          style="text-align: center; background-color: #fbfdff"
         >
           <div id="sib-form-container" class="sib-form-container">
             <div
@@ -812,7 +820,7 @@
               style="
                 max-width: 540px;
                 text-align: center;
-                background-color: rgba(255, 255, 255, 1);
+                background-color: rgba(239, 224, 243, 1);
                 border-width: 1px;
                 border-style: solid;
                 border-color: #c0ccd9;
@@ -871,7 +879,7 @@
                             id="VORNAME"
                             name="VORNAME"
                             autocomplete="off"
-                            placeholder="VORNAME"
+                            placeholder=""
                             data-required="true"
                             required
                           />
@@ -898,7 +906,7 @@
                           font-family: Helvetica, sans-serif;
                           font-size: 12px;
                           text-align: left;
-                          color: #8390a4;
+                          color: #0a0a0a;
                           text-align: left;
                         "
                       >
@@ -961,7 +969,7 @@
                           font-family: Helvetica, sans-serif;
                           font-size: 12px;
                           text-align: left;
-                          color: #8390a4;
+                          color: #0a0a0a;
                           text-align: left;
                         "
                       >
@@ -1028,7 +1036,7 @@
                           font-family: Helvetica, sans-serif;
                           font-size: 12px;
                           text-align: left;
-                          color: #8390a4;
+                          color: #0a0a0a;
                           text-align: left;
                         "
                       >
