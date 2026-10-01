@@ -51,8 +51,8 @@ $questions = post('questions');
 
 /** Meta (Hidden Fields, optional) */
 $workshop_title = post('workshop_title') ?: 'Canva Advanced Workshop – Social-Media-Edition';
-$workshop_date  = post('workshop_date')  ?: '19.03.2026';
-$workshop_time  = post('workshop_time')  ?: '17:30';
+$workshop_date  = post('workshop_date')  ?: '21.10.2026';
+$workshop_time  = post('workshop_time')  ?: '17:00';
 
 $errors = [];
 
@@ -292,7 +292,7 @@ http_response_code(200);
     <h1>Vielen Dank für deine Anmeldung.</h1>
     <p>
       Du bekommst umgehend eine Bestätigung für deine erfolgreiche Anmeldung zum
-      Canva-Advanced-Workshop am 19.03.2026 um 17:30 Uhr.
+      Canva-Advanced-Workshop am 21.10.2026 um 17 Uhr.
     </p>
     <p>
     Liebe Grüße, Alexandra. 
