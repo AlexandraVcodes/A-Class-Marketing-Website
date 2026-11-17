@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Adventkalender Gewinnspiel – Gewinne eine 1:1 Positionierungs-Session |
+      A-Class Marketing
+    </title>
+    <link
+      rel="icon"
+      href="sources/Logo_ohne Schriftzug.png"
+      type="image/icon"
+    />
+    <meta
+      name="description"
+      content="Flowing Vibes Adventkalender: Gewinne eine 50-minütige 1:1 Positionierungs-Session mit Mag. Alexandra Vukits. Teilnahme vom 19.12. bis 27.12.2026."
+    />
+
+    <!-- Brevo Formular-Styles -->
+    <link
+      rel="stylesheet"
+      href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    />
+
+    <style>
+      :root {
+        --gold: #c9a84c;
+        --purple: #501b5f;
+        --purple-dark: #3a1345;
+        --black: #0a0a0a;
+        --lilac: #f7f3f8;
+        --text-soft: #3d3d3d;
+        --serif: Georgia, "Times New Roman", serif;
+        --sans: Arial, Helvetica, sans-serif;
+        --mono: "Courier New", monospace;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--black);
+        font-family: var(--sans);
+        font-size: 17px;
+        line-height: 1.6;
+      }
+      a {
+        color: var(--purple);
+      }
+      a:hover {
+        color: var(--black);
+      }
+      input:focus-visible,
+      button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
+      }
+      .wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+      .section {
+        padding: 96px 24px;
+      }
+      .eyebrow {
+        font-family: var(--mono);
+        letter-spacing: 0.2em;
+        font-size: 14px;
+        color: var(--purple);
+      }
+      .eyebrow--gold {
+        color: var(--gold);
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--serif);
+        font-weight: normal;
+        margin: 0;
+      }
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+      p {
+        margin: 0;
+      }
+      .stack {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 64px;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 16px 32px;
+        border-radius: 999px;
+        font-size: 1rem;
+      }
+      .btn--gold {
+        background: var(--gold);
+        color: var(--black);
+        font-weight: bold;
+        letter-spacing: 0.04em;
+      }
+      .btn--gold:hover {
+        color: var(--black);
+        background: #d9bc66;
+      }
+      .btn--outline {
+        border: 1px solid var(--gold);
+        color: #fff;
+      }
+      .btn--outline:hover {
+        color: #fff;
+        background: rgba(201, 168, 76, 0.15);
+      }
+
+      /* Header */
+      .topbar {
+        background: var(--black);
+        padding: 28px 24px;
+      }
+      .topbar .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px 20px;
+        text-align: center;
+        font-family: var(--mono);
+        font-size: 1.6rem;
+      }
+      .topbar b {
+        letter-spacing: 0.2em;
+      }
+
+      /* Hero */
+      .hero {
+        background: var(--purple);
+        padding: 96px 24px 104px;
+      }
+      .hero .grid2 {
+        align-items: center;
+      }
+      .hero-date {
+        font-family: var(--mono);
+        letter-spacing: 0.12em;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        font-weight: bold;
+        color: var(--gold);
+      }
+      .hero h1 {
+        font-size: 3.25rem;
+        line-height: 1.12;
+        color: #fff;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        color: #f1e9f3;
+      }
+      .hero-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-top: 8px;
+      }
+      .photo-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .photo {
+        position: relative;
+        width: 100%;
+        max-width: 420px;
+        aspect-ratio: 3/4;
+        margin: 0 auto;
+        background: var(--purple-dark);
+        border: 1px solid var(--gold);
+        overflow: hidden;
+      }
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+      .photo::after {
+        content: "";
+        position: absolute;
+        inset: 16px;
+        border: 1px solid rgba(201, 168, 76, 0.45);
+        pointer-events: none;
+      }
+      .photo-caption {
+        width: 100%;
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2px;
+        font-size: 13px;
+        color: #e8d9ec;
+        margin-top: 12px;
+      }
+
+      /* Gewinn */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+      }
+      .card {
+        border-top: 3px solid var(--purple);
+        background: var(--lilac);
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .card .num {
+        font-family: var(--serif);
+        font-size: 2.5rem;
+        color: var(--purple);
+        line-height: 1;
+      }
+      .card h3 {
+        font-size: 1.5rem;
+      }
+      .card p,
+      .soft {
+        color: var(--text-soft);
+      }
+
+      /* Ablauf */
+      .dark {
+        background: var(--black);
+      }
+      .dark h2 {
+        color: #fff;
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+      }
+      .step {
+        border: 1px solid #3a3a3a;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .step--hl {
+        border-color: var(--gold);
+      }
+      .step .label {
+        font-family: var(--mono);
+        font-size: 13px;
+        letter-spacing: 0.15em;
+        color: var(--gold);
+      }
+      .step .date {
+        font-family: var(--serif);
+        font-size: 2rem;
+        color: #fff;
+      }
+      .step p {
+        color: #cfcfcf;
+      }
+
+      /* Formular-Bereich */
+      .lilac {
+        background: var(--lilac);
+      }
+      .form-card {
+        background: #fff;
+        border-top: 4px solid var(--gold);
+        padding: 40px;
+      }
+
+      /* ---- Brevo-Formular im A-Class-Design ---- */
+      .sib-form {
+        padding: 0 !important;
+        background: transparent !important;
+        font-family: var(--sans) !important;
+        text-align: left !important;
+      }
+      .sib-form-container {
+        max-width: none;
+      }
+      #sib-container {
+        max-width: none !important;
+        background: transparent !important;
+        border: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+      }
+      #sib-container .sib-form-block,
+      #sib-container .sib-input {
+        padding: 0 !important;
+      }
+      #sib-form .row {
+        padding: 0 0 20px;
+      }
+      #sib-container .entry__label {
+        font-family: var(--sans) !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        color: var(--black) !important;
+        margin-bottom: 8px;
+      }
+      #sib-container .entry__label::after {
+        color: var(--purple) !important;
+      }
+      #sib-container .entry__field {
+        border: 1px solid #8a8a8a !important;
+        border-radius: 0 !important;
+        background: #fff !important;
+      }
+      #sib-container .entry__field:focus-within {
+        box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.6) !important;
+      }
+      #sib-container input.input {
+        font-family: var(--sans) !important;
+        font-size: 16px !important;
+        min-height: 46px;
+        padding: 10px 14px !important;
+        color: var(--black);
+      }
+      #sib-container input::placeholder {
+        color: #8a8a8a !important;
+      }
+      #sib-container .entry__error {
+        font-family: var(--sans) !important;
+        font-size: 14px !important;
+        border-radius: 0 !important;
+        margin-top: 6px;
+      }
+      .consent {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        font-size: 14px;
+        color: var(--text-soft);
+      }
+      .consent input {
+        width: 22px;
+        height: 22px;
+        margin: 2px 0 0;
+        accent-color: var(--purple);
+        flex-shrink: 0;
+      }
+      .brevo-note {
+        font-size: 13px;
+        color: #5a5a5a;
+      }
+      .brevo-note a {
+        color: var(--purple);
+      }
+      #sib-container .sib-form-block__button {
+        background: var(--purple) !important;
+        color: #fff !important;
+        border: 0 !important;
+        border-radius: 999px !important;
+        padding: 16px 32px !important;
+        font-family: var(--sans) !important;
+        font-size: 1rem !important;
+        font-weight: bold !important;
+        letter-spacing: 0.04em;
+        min-height: 52px;
+        width: 100%;
+        justify-content: center;
+        cursor: pointer;
+      }
+      #sib-container .sib-form-block__button:hover {
+        background: #3a1345 !important;
+      }
+      .sib-form-message-panel {
+        max-width: none !important;
+        border-radius: 0 !important;
+        font-family: var(--sans) !important;
+        margin-bottom: 20px;
+      }
+      #success-message {
+        background: var(--lilac) !important;
+        color: var(--black) !important;
+        border-color: var(--purple) !important;
+      }
+      #success-message .sib-notification__icon {
+        fill: var(--purple);
+      }
+      .required-note {
+        font-size: 13px;
+        color: #5a5a5a;
+        margin-top: 12px;
+      }
+
+      /* Empfehlung */
+      .quote-box {
+        background: var(--purple);
+        padding: 48px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .quote-mark {
+        font-family: var(--serif);
+        font-size: 5rem;
+        line-height: 0.6;
+        color: var(--gold);
+        height: 40px;
+      }
+      .quote {
+        font-family: var(--serif);
+        font-size: 1.35rem;
+        line-height: 1.5;
+        color: #fff;
+      }
+      .quote-box .btn {
+        align-self: flex-start;
+      }
+
+      /* Teilnahmebedingungen */
+      .terms {
+        padding: 0 24px 96px;
+      }
+      .terms .wrap {
+        border-top: 1px solid #d6d6d6;
+        padding-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .terms h2 {
+        font-size: 1.75rem;
+      }
+      .terms-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 16px 48px;
+        font-size: 15px;
+        color: var(--text-soft);
+      }
+      .terms-grid strong {
+        color: var(--black);
+      }
+
+      /* Footer */
+      footer {
+        background: var(--black);
+        padding: 48px 24px;
+        color: #cfcfcf;
+        font-size: 14px;
+      }
+      footer .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px;
+      }
+      footer .col {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      footer .gold {
+        color: var(--gold);
+      }
+      footer .muted {
+        color: #cfcfcf;
+      }
+
+      @media (max-width: 640px) {
+        .section,
+        .hero {
+          padding-top: 64px;
+          padding-bottom: 64px;
+        }
+        .hero h1 {
+          font-size: 2.25rem;
+        }
+        h2 {
+          font-size: 1.9rem;
+        }
+        .hero-date,
+        .topbar .wrap {
+          font-size: 1.15rem;
+        }
+        .photo {
+          max-width: 340px;
+        }
+        .form-card,
+        .quote-box {
+          padding: 28px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="topbar">
+      <div class="wrap">
+        <b style="color: var(--gold)">A-CLASS MARKETING</b>
+        <span style="color: #fff">×</span>
+        <b style="color: #fff">FLOWING VIBES</b>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap grid2">
+        <div class="stack" style="gap: 24px">
+          <div class="hero-date">GEWINNSPIEL · 19.12. – 27.12.2026</div>
+          <h1>Gewinne eine 1:1 Positionierungs-Session mit Alexandra Vukits</h1>
+          <p>
+            Du weißt, was du kannst – aber deine Wunschkund:innen merken es noch
+            nicht? Gewinne 50 Minuten nur für dich: Wir schärfen gemeinsam,
+            wofür du stehst, wen du wirklich erreichen willst und wie du sie so
+            ansprichst, dass sie sich sofort gemeint fühlen.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn--gold" href="#mitmachen">Jetzt mitmachen</a>
+            <a class="btn btn--outline" href="#ablauf">So läuft's ab</a>
+          </div>
+        </div>
+        <div class="photo-col">
+          <div class="photo">
+            <!-- FOTO: Pfad zum Bild hier eintragen -->
+            <img
+              src="images/Hochkant im Wald mit Blazer über der Schulter_klein.jpg"
+              alt="Mag. Alexandra Vukits, Expertin für Positionierung und Zielgruppenansprache"
+            />
+          </div>
+          <div class="photo-caption">
+            <span
+              >Alexandra Vukits – Expertin für Positionierung &amp;
+              Zielgruppenansprache</span
+            >
+            <span>© Alexandra Vukits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dein Gewinn -->
+    <section class="section">
+      <div class="wrap stack" style="gap: 48px">
+        <div class="stack" style="max-width: 720px">
+          <div class="eyebrow">DEIN GEWINN</div>
+          <h2>50 Minuten Klarheit – nur für dich und dein Business</h2>
+          <p class="soft">
+            In der 1:1 Session arbeiten wir direkt an deinem Angebot. Du gehst
+            mit klaren Antworten auf drei Fragen raus:
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="num">01</div>
+            <h3>Wofür du stehst</h3>
+            <p>
+              Wir bringen auf den Punkt, was dich und dein Angebot
+              unverwechselbar macht.
+            </p>
+          </div>
+          <div class="card">
+            <div class="num">02</div>
+            <h3>Wen du wirklich erreichen willst</h3>
+            <p>
+              Wir schärfen das Bild deiner Wunschkund:innen – statt „alle, die
+              es brauchen".
+            </p>
+          </div>
+          <div class="card">
+            <div class="num">03</div>
+            <h3>Wie du sie ansprichst</h3>
+            <p>
+              Wir finden die Worte, bei denen sich deine Wunschkund:innen sofort
+              gemeint fühlen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section id="ablauf" class="section dark">
+      <div class="wrap stack" style="gap: 48px">
+        <div class="stack">
+          <div class="eyebrow eyebrow--gold">ABLAUF &amp; TERMINE</div>
+          <h2>So einfach bist du dabei</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="label">START</div>
+            <div class="date">19.12.2026</div>
+            <p>
+              Das Gewinnspiel-Fenster im Flowing Vibes Adventkalender öffnet
+              sich.
+            </p>
+          </div>
+          <div class="step">
+            <div class="label">TEILNAHMESCHLUSS</div>
+            <div class="date">27.12.2026</div>
+            <p>Mitmachen kannst du bis einschließlich 27. Dezember.</p>
+          </div>
+          <div class="step">
+            <div class="label">ZIEHUNG</div>
+            <div class="date">28.12.2026</div>
+            <p>
+              Die Gewinnerin oder der Gewinner wird gezogen und am selben Tag
+              per E-Mail verständigt.
+            </p>
+          </div>
+          <div class="step step--hl">
+            <div class="label">EINLÖSBAR BIS</div>
+            <div class="date">31.01.2027</div>
+            <p>Den Gutschein für deine Session löst du bis Ende Jänner ein.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mitmachen: Brevo-Formular -->
+    <section id="mitmachen" class="section lilac">
+      <div class="wrap grid2" style="align-items: start">
+        <div class="stack">
+          <div class="eyebrow">JETZT MITMACHEN</div>
+          <h2>
+            Trag dich ein – und mit etwas Glück starten wir gemeinsam klar
+            positioniert ins neue Jahr. 🙂
+          </h2>
+          <p class="soft">
+            Die Teilnahme ist kostenlos und an keinen Kauf gebunden.
+            Teilnahmeschluss ist der 27.12.2026.
+          </p>
+        </div>
+
+        <div class="form-card">
+          <!-- Begin Brevo Form -->
+          <div class="sib-form">
+            <div id="sib-form-container" class="sib-form-container">
+              <div
+                id="error-message"
+                class="sib-form-message-panel"
+                style="
+                  font-size: 16px;
+                  text-align: left;
+                  color: #661d1d;
+                  background-color: #ffeded;
+                  border-color: #ff4949;
+                "
+              >
+                <div
+                  class="sib-form-message-panel__text sib-form-message-panel__text--center"
+                >
+                  <svg
+                    viewBox="0 0 512 512"
+                    class="sib-icon sib-notification__icon"
+                  >
+                    <path
+                      d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+                    />
+                  </svg>
+                  <span class="sib-form-message-panel__inner-text"
+                    >Deine Teilnahme konnte nicht gespeichert werden. Bitte
+                    versuche es erneut.</span
+                  >
+                </div>
+              </div>
+              <div></div>
+
+              <div
+                id="success-message"
+                class="sib-form-message-panel"
+                style="font-size: 16px; text-align: left"
+              >
+                <div
+                  class="sib-form-message-panel__text sib-form-message-panel__text--center"
+                >
+                  <svg
+                    viewBox="0 0 512 512"
+                    class="sib-icon sib-notification__icon"
+                  >
+                    <path
+                      d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+                    />
+                  </svg>
+                  <span class="sib-form-message-panel__inner-text"
+                    >Danke – du bist dabei! Die Ziehung findet am 28.12.2026
+                    statt. Wenn du gewinnst, bekommst du am selben Tag eine
+                    E-Mail von mir. Ich drücke dir die Daumen!</span
+                  >
+                </div>
+              </div>
+              <div></div>
+
+              <div
+                id="sib-container"
+                class="sib-container--large sib-container--vertical"
+                style="direction: ltr"
+              >
+                <form
+                  id="sib-form"
+                  method="POST"
+                  action="https://94193868.sibforms.com/serve/MUIFACdOY1Bz9PhvKMydylO2-nmf-xmFGYU1rfr4PHnt10m-LLq24NEcv-HMOgehr9Mhh_vyDcVVQqk6SThzSFpz7TRGCTmmYO0qPnItQIl4QDlURljwTUJEi0SHoLSAgXPfagZarufoMqtn-YbBSzQY1d_2kgGQHUMeu4x_v6li1Q69eY3S_RiDjVLdPpoQ37XdlVWLmiolnnlRaw=="
+                  data-type="subscription"
+                >
+                  <div class="row">
+                    <div class="sib-input sib-form-block">
+                      <div class="form__entry entry_block">
+                        <div class="form__label-row">
+                          <label
+                            class="entry__label"
+                            for="VORNAME"
+                            data-required="*"
+                            >Vorname</label
+                          >
+                          <div class="entry__field">
+                            <input
+                              class="input"
+                              maxlength="200"
+                              type="text"
+                              id="VORNAME"
+                              name="VORNAME"
+                              autocomplete="given-name"
+                              placeholder="Dein Vorname"
+                              data-required="true"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            color: #661d1d;
+                            background-color: #ffeded;
+                            border-color: #ff4949;
+                          "
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="sib-input sib-form-block">
+                      <div class="form__entry entry_block">
+                        <div class="form__label-row">
+                          <label
+                            class="entry__label"
+                            for="NACHNAME"
+                            data-required="*"
+                            >Nachname</label
+                          >
+                          <div class="entry__field">
+                            <input
+                              class="input"
+                              maxlength="200"
+                              type="text"
+                              id="NACHNAME"
+                              name="NACHNAME"
+                              autocomplete="family-name"
+                              placeholder="Dein Nachname"
+                              data-required="true"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            color: #661d1d;
+                            background-color: #ffeded;
+                            border-color: #ff4949;
+                          "
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="sib-input sib-form-block">
+                      <div class="form__entry entry_block">
+                        <div class="form__label-row">
+                          <label
+                            class="entry__label"
+                            for="EMAIL"
+                            data-required="*"
+                            >E-Mail-Adresse</label
+                          >
+                          <div class="entry__field">
+                            <input
+                              class="input"
+                              type="text"
+                              inputmode="email"
+                              id="EMAIL"
+                              name="EMAIL"
+                              autocomplete="email"
+                              value=""
+                              placeholder="name@beispiel.at"
+                              data-required="true"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <label
+                          class="entry__error entry__error--primary"
+                          style="
+                            color: #661d1d;
+                            background-color: #ffeded;
+                            border-color: #ff4949;
+                          "
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pflicht-Häkchen Teilnahmebedingungen (wird vom Browser geprüft, nicht an Brevo übertragen) -->
+                  <div class="row">
+                    <div class="consent">
+                      <input id="TEILNAHME_OK" type="checkbox" required />
+                      <label for="TEILNAHME_OK"
+                        >Ich akzeptiere die
+                        <a href="#teilnahmebedingungen">Teilnahmebedingungen</a>
+                        und habe die
+                        <a href="https://www.a-class-marketing.at/datenschutz"
+                          >Datenschutzerklärung</a
+                        >
+                        gelesen. *</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <p class="brevo-note">
+                      Ich verwende Brevo als Marketing-Plattform. Indem du das
+                      Formular absendest, erklärst du dich einverstanden, dass
+                      die von dir angegebenen persönlichen Informationen an
+                      Brevo zur Bearbeitung übertragen werden gemäß der
+                      <a
+                        target="_blank"
+                        href="https://www.brevo.com/de/legal/privacypolicy/"
+                        rel="nofollow noopener"
+                        >Datenschutzerklärung von Brevo</a
+                      >.
+                    </p>
+                  </div>
+
+                  <div class="sib-form-block">
+                    <button
+                      class="sib-form-block__button sib-form-block__button-with-loader"
+                      form="sib-form"
+                      type="submit"
+                    >
+                      <svg
+                        class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+                        />
+                      </svg>
+                      Am Gewinnspiel teilnehmen
+                    </button>
+                  </div>
+                  <p class="required-note">* Pflichtfelder</p>
+
+                  <input
+                    type="text"
+                    name="email_address_check"
+                    value=""
+                    class="input--hidden"
+                  />
+                  <input type="hidden" name="locale" value="de" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- End Brevo Form -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Über Alexandra + Empfehlung für Monika -->
+    <section class="section">
+      <div class="wrap grid2">
+        <div class="stack">
+          <div class="eyebrow">WER DICH BEGLEITET</div>
+          <h2 style="font-size: 2.25rem">Mag. Alexandra Vukits</h2>
+          <p
+            style="
+              font-family: var(--mono);
+              font-size: 14px;
+              color: var(--purple);
+            "
+          >
+            Expertin für Positionierung &amp; Zielgruppenansprache
+          </p>
+          <p class="soft">
+            Mit über 12 Jahren Erfahrung im Online-Marketing begleite ich als
+            Inhaberin von A-Class Marketing in Guntramsdorf Unternehmerinnen und
+            Unternehmer dabei, klar zu zeigen, wofür sie stehen – und genau die
+            Menschen zu erreichen, die zu ihnen passen. Strategisch und ganz
+            praktisch: von der Positionierung über die Zielgruppenansprache bis
+            zu Meta &amp; Google Ads.
+          </p>
+          <a href="https://www.a-class-marketing.at" style="font-weight: bold"
+            >www.a-class-marketing.at</a
+          >
+        </div>
+        <div class="quote-box">
+          <div class="eyebrow eyebrow--gold">MEINE EMPFEHLUNG</div>
+          <div class="quote-mark" aria-hidden="true">„</div>
+          <p class="quote">
+            Ich erlebe Monika als Unternehmerin mit Herz, Klarheit und ganz viel
+            Empathie – eine Frau, die diese Welt ein Stückchen besser machen
+            möchte. Genau das spürt man in allem, was sie tut. Ich kann jedem
+            nur empfehlen, Monika kennenzulernen und mit ihr zusammenzuarbeiten.
+          </p>
+          <p style="font-size: 14px; color: #e8d9ec">
+            – Alexandra Vukits über Monika Kefer von Flowing Vibes
+          </p>
+          <a
+            class="btn btn--outline"
+            href="https://www.flowing-vibes.com"
+            style="padding: 14px 28px"
+            >Zum Flowing Vibes Adventkalender</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Teilnahmebedingungen -->
+    <section id="teilnahmebedingungen" class="terms">
+      <div class="wrap">
+        <h2>Teilnahmebedingungen</h2>
+        <div class="terms-grid">
+          <p>
+            <strong>Veranstalterin:</strong> A-Class Marketing, Mag. Alexandra
+            Vukits, Guntramsdorf, Niederösterreich – im Rahmen des Flowing Vibes
+            Adventkalenders.
+          </p>
+          <p>
+            <strong>Zeitraum:</strong> 19.12.2026 bis einschließlich 27.12.2026
+            (23:59 Uhr).
+          </p>
+          <p>
+            <strong>Teilnahme:</strong> kostenlos und unabhängig von einem Kauf.
+            Pro Person ist eine Teilnahme möglich. Teilnahmeberechtigt sind alle
+            Personen ab 18 Jahren mit Wohnsitz in Österreich, Deutschland oder
+            der Schweiz.
+          </p>
+          <p>
+            <strong>Gewinn:</strong> ein Gutschein für eine 50-minütige 1:1
+            Positionierungs-Session mit Alexandra Vukits – online oder vor Ort.
+            Eine Session vor Ort ist nur in den Bezirken Baden und Mödling
+            möglich. Eine Barablöse ist nicht möglich.
+          </p>
+          <p>
+            <strong>Ziehung &amp; Verständigung:</strong> Die Ziehung erfolgt am
+            28.12.2026 unter allen gültigen Teilnahmen. Die Gewinnerin bzw. der
+            Gewinner wird am selben Tag per E-Mail verständigt.
+          </p>
+          <p>
+            <strong>Einlösung:</strong> Der Gutschein ist bis 31.01.2027
+            einlösbar. Danach verfällt er.
+          </p>
+          <p>
+            <strong>Datenschutz:</strong> Deine Daten werden ausschließlich zur
+            Durchführung des Gewinnspiels verwendet und danach gelöscht.
+          </p>
+          <p>
+            <strong>Sonstiges:</strong> Der Rechtsweg ist ausgeschlossen. Das
+            Gewinnspiel steht in keiner Verbindung zu Meta/Instagram.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap">
+        <div class="col">
+          <div
+            style="font-family: var(--serif); font-size: 1.1rem; color: #fff"
+          >
+            Mag. Alexandra Vukits
+          </div>
+          <div>Inhaberin A-Class Marketing</div>
+          <div>
+            Positionierung | Zielgruppenansprache | Meta &amp; Google Ads
+          </div>
+          <div>Guntramsdorf, Niederösterreich</div>
+        </div>
+        <div class="col">
+          <a class="gold" href="tel:+436701870048">+43 670 1870048</a>
+          <a class="gold" href="mailto:alexandra@a-class-marketing.at"
+            >alexandra@a-class-marketing.at</a
+          >
+          <a class="gold" href="https://www.a-class-marketing.at"
+            >www.a-class-marketing.at</a
+          >
+        </div>
+        <div class="col">
+          <a class="muted" href="https://www.a-class-marketing.at/impressum"
+            >Impressum</a
+          >
+          <a class="muted" href="https://www.a-class-marketing.at/datenschutz"
+            >Datenschutz</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Brevo Formular-Skript -->
+    <script>
+      window.REQUIRED_CODE_ERROR_MESSAGE =
+        "Wähle bitte einen Ländervorwahl aus.";
+      window.LOCALE = "de";
+      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+        "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+      window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
+      window.GENERIC_INVALID_MESSAGE =
+        "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+      window.INVALID_NUMBER =
+        "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+      window.INVALID_DATE = "Bitte gib ein gültiges Datum ein";
+      window.REQUIRED_MULTISELECT_MESSAGE =
+        "Wähle bitte mindestens eine Option aus";
+      window.translation = {
+        common: {
+          selectedList: "{quantity} Liste ausgewählt",
+          selectedLists: "{quantity} Listen ausgewählt",
+          selectedOption: "{quantity} ausgewählt",
+          selectedOptions: "{quantity} ausgewählt",
+        },
+      };
+      var AUTOHIDE = Boolean(0);
+    </script>
+    <script
+      defer
+      src="https://sibforms.com/forms/end-form/build/main.js"
+    ></script>
+  </body>
+</html>
